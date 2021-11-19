@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* Propriété Box-sizing */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+.header__logo {
+  width: 300px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  height: 88px;
+  box-shadow: inset 0px 7px 6px #d5d5d5;
+}
+.nav__logo {
+  margin-right: 20px;
+}
+.nav__texte {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=style.css.map */
