@@ -21,8 +21,14 @@
              class="header__logo">
     </header>
     <nav class="nav">
-        <div><i class="fas fa-map-marker-alt nav__logo"></i></div>
-        <div class="nav__texte"><p>Paris, Belleville</p></div>
+        <div>
+            <i class="fas fa-map-marker-alt nav__logo">
+
+            </i>
+        </div>
+        <div class="nav__texte">
+            <p>Paris, Belleville</p>
+        </div>
     </nav>
     <main class="container">
         <section class="prez">
@@ -30,62 +36,135 @@
                 <h2>Réservez le menu qui </br>vous convient</h2>
             </div>
             <div class="prez__soustitre">
-                <h3>Découvrez des restaurants d'exception, </br>selectionnés par nos soins.</h3>
+                <h4>Découvrez des restaurants d'exception, </br>selectionnés par nos soins.</h4>
             </div>
-            <button class="btn"> Explorer nos restaurants</button>
+            <button class="btn"> 
+                Explorer nos restaurants
+            </button>
         </section>
         <section class="menu">
             <div class="menu__titre">
                 <h2>Fonctionnement</h2>
             </div>
             <div class="menu__marge">
-                <div class="menu__un"><p>1</p></div>
+                <div class="menu__un">
+                    <p>1</p>
+                </div>
                 <button class="menu__btn">
-                    <div class="menu__logo"><i class="fas fa-mobile-alt menu__logo-couleur"></i></div>
+                    <div class="menu__icon">
+                        <i class="fas fa-mobile-alt menu__icon-couleur"></i>
+                    </div>
                     Choisissez un restaurant
                 </button>
             </div>
             <div class="menu__marge">
-                <div class="menu__un"><p>2</p></div>
+                <div class="menu__un">
+                    <p>2</p>
+                </div>
                 <button class="menu__btn">
-                    <div class="menu__logo"><i class="fas fa-align-justify menu__logo-couleur"></i></div>
+                    <div class="menu__icon">
+                        <i class="fas fa-align-justify menu__icon-couleur"></i>
+                    </div>
                     Composez votre menu
                 </button>
             </div>
             <div class="menu__marge">
-                <div class="menu__un"><p>3</p></div>
+                <div class="menu__un">
+                    <p>3</p>
+                </div>
                 <button class="menu__btn">
-                    <div class="menu__logo"><i class="fas fa-store menu__logo-couleur"></i></div>
+                    <div class="menu__icon">
+                        <i class="fas fa-store menu__icon-couleur"></i>
+                    </div>
                     Dégustez au restaurant
                 </button>
             </div>
         </section>
         <section class="proj">
-            <div class="proj__titre"><h2>Restaurants</h2></div>
-            <div>
-                <img src="./public/img/restaurants/lapalettedugout.jpg" alt="Photo de la palette du goût" width="500px" height="">
-                <div> 
-                    <div> <p>Nouveau</p></div>
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                    <div><i class="far fa-heart"></i></div>
+            <div class="proj__marge">
+                <div class="proj__titre">
+                    <h2>Restaurants</h2>
+                </div>
+                <div class="proj__card">
+                    <img src="./public/img/restaurants/lapalettedugout.jpg" 
+                         alt="Photo de la palette du goût"
+                         class="proj__img">
+                    <div class="proj__nouveau">
+                        <p>Nouveau</p>
+                    </div>
+                    <div class="proj__info"> 
+                        <div>
+                            <h3>La palette du goût</h3>
+                            <h4 class="proj__description">Ménilmontant</h4>
+                        </div>
+                        <div class="proj__icon">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj__card">
+                    <img src="./public/img/restaurants/lanoteenchantee.jpg" 
+                         alt="Photo de la palette du goût"
+                         class="proj__img">
+                    <div class="proj__nouveau">
+                        <p>Nouveau</p>
+                    </div>
+                    <div class="proj__info"> 
+                        <div>
+                            <h3>La note enchantée</h3>
+                            <h4 class="proj__description">Charonne</h4>
+                        </div>
+                        <div class="proj__icon">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj__card">
+                    <img src="./public/img/restaurants/alafrancaise.jpg" 
+                         alt="Photo de la palette du goût"
+                         class="proj__img">
+                    <div class="proj__info2"> 
+                        <div>
+                            <h3>À la française</h3>
+                            <h4 class="proj__description">Cité Rouge</h4>
+                        </div>
+                        <div class="proj__icon">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj__card">
+                    <img src="./public/img/restaurants/ledelicedessens.jpg" 
+                         alt="Photo de la palette du goût"
+                         class="proj__img">
+                    <div class="proj__info2"> 
+                        <div>
+                            <h3>Le délice des sens</h3>
+                            <h4 class="proj__description">Folie-Méricourt</h4>
+                        </div>
+                        <div class="proj__icon">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div> <p>ohmyfood</p></div>
-        <div>
-            <div>
-                <i class="fas fa-utensils"></i>
+    <footer class="footer">
+        <div class="footer__logo"> 
+            <h1>ohmyfood</h1>
+        </div>
+        <div class="footer__elements">
+            <div class="footer__lien">
+                <i class="fas fa-utensils footer__icon"></i>
                 <p>Proposer un restaurant</p>
             </div>
-            <div>
-                <i class="fas fa-utensils"></i>
+            <div class="footer__lien">
+                <i class="fas fa-hands-helping footer__icon"></i>
                 <p>Devenir partenaire</p>
             </div>
-            <p>Mentions légales</p>
-            <p>Contact</p>
+            <p class="footer__lien2">Mentions légales</p>
+            <p class="footer__lien3">Contact</p>
         </div>
     </footer>
 </body>

@@ -7,6 +7,10 @@
     "sass": "sass --watch ./sass/main.scss:.public/css/style.css",
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./.public/css/prefixed/"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eric-colday/Booki.git"
+  },
   "author": "",
   "license": "ISC"
 }
