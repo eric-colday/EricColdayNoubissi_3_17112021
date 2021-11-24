@@ -1,0 +1,35 @@
+.footer{
+    height: 37rem;
+    background-color: #323232;
+    &__margeMenus{
+        margin-top: 10rem;
+    }
+    &__marge{
+        width: 90%;
+        margin: auto;
+    }
+    &__logo{
+        padding-top: 40px;
+        padding-bottom: 30px;
+        font-size: 20px;
+        color: white;
+    }
+    &__elements{
+        color: white;
+    }
+    &__lien{
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    &__icon{
+        margin-right: 20px;
+        font-size: 23px;
+    }
+    &__lien2{
+        margin-bottom: 16px;
+    }
+    &__lien3{
+        margin-bottom: 16px;
+    }
+}

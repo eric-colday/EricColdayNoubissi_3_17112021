@@ -1,0 +1,16 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    height: 88px;
+    box-shadow: inset 0px 7px 6px #d5d5d5;
+    &__logo{
+        margin-right: 20px;
+        font-size: 32px;
+    }
+    &__texte{
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
