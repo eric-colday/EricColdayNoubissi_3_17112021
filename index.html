@@ -20,140 +20,144 @@
              alt="Logo de Oh my food"
              class="header__logo">
     </header>
-    <nav class="nav">
-        <div>
-            <i class="fas fa-map-marker-alt nav__logo">
-
-            </i>
-        </div>
-        <div class="nav__texte">
-            <p>Paris, Belleville</p>
-        </div>
+    <nav>
+        <form>
+            <i class="fas fa-map-marker-alt nav__icon-Map"></i>
+            <input type="search" placeholder="Paris, Belleville" class="nav__texte">
+        </form>
     </nav>
     <main class="container">
-        <section class="prez">
-            <div class="prez__titre">
+        <section class="accueil">
+            <div class="accueil__titre">
                 <h2>Réservez le menu qui </br>vous convient</h2>
             </div>
-            <div class="prez__soustitre">
+            <div class="accueil__soustitre">
                 <h4>Découvrez des restaurants d'exception, </br>selectionnés par nos soins.</h4>
             </div>
-            <button class="btn"> 
+            <button class="btn" 
+                    onclick="window.location.href = 'lapalettedugout.html';"> 
                 Explorer nos restaurants
             </button>
         </section>
-        <section class="menu">
-            <div class="menu__titre">
+        <section class="accueil-menu">
+            <div class="accueil-menu__titre">
                 <h2>Fonctionnement</h2>
             </div>
-            <div class="menu__flexbox">
-                <div class="menu__marge">
-                    <div class="menu__un">
+            <div class="accueil-menu__flexbox">
+                <div class="accueil-menu__marge">
+                    <div class="accueil-menu__un">
                         <p>1</p>
                     </div>
-                    <button class="menu__btn">
-                        <div class="menu__icon">
-                            <i class="fas fa-mobile-alt menu__icon-couleur"></i>
+                    <button class="accueil-menu__btn" 
+                            onclick="window.location.href = 'lapalettedugout.html';">
+                        <div class="accueil-menu__icon">
+                            <i class="fas fa-mobile-alt accueil-menu__icon-couleur"></i>
                         </div>
                         Choisissez un restaurant
                     </button>
                 </div>
-                <div class="menu__marge">
-                    <div class="menu__un">
+                <div class="accueil-menu__marge">
+                    <div class="accueil-menu__un">
                         <p>2</p>
                     </div>
-                    <button class="menu__btn">
-                        <div class="menu__icon">
-                            <i class="fas fa-align-justify menu__icon-couleur"></i>
+                    <button class="accueil-menu__btn"
+                            onclick="window.location.href = 'lapalettedugout.html';">
+                        <div class="accueil-menu__icon">
+                            <i class="fas fa-align-justify accueil-menu__icon-couleur"></i>
                         </div>
                         Composez votre menu
                     </button>
                 </div>
-                <div class="menu__marge">
-                    <div class="menu__un">
+                <div class="accueil-menu__marge">
+                    <div class="accueil-menu__un">
                         <p>3</p>
                     </div>
-                    <button class="menu__btn">
-                        <div class="menu__icon">
-                            <i class="fas fa-store menu__icon-couleur"></i>
+                    <button class="accueil-menu__btn" 
+                            onclick="window.location.href = 'lapalettedugout.html';">
+                        <div class="accueil-menu__icon">
+                            <i class="fas fa-store accueil-menu__icon-couleur"></i>
                         </div>
                         Dégustez au restaurant
                     </button>
                 </div>
             </div>
         </section>
-        <section class="proj">
-            <div class="proj__marge">
-                <div class="proj__titre">
+        <section class="accueil-proj">
+            <div class="accueil-proj__marge">
+                <div class="accueil-proj__titre">
                     <h2 class="">Restaurants</h2>
                 </div>
-                <div class="proj__flexbox">
-                    <a href="lapalettedugout.html" class="proj__decoration">
-                        <div class="proj__card">
+                <div class="accueil-proj__flexbox">
+                    <a href="lapalettedugout.html" class="accueil-proj__decoration">
+                        <div class="accueil-proj__card">
                             <img src="./public/img/restaurants/lapalettedugout.jpg" 
                                  alt="Photo de la palette du goût"
-                                 class="proj__img">
-                            <div class="proj__nouveau">
+                                 class="accueil-proj__img">
+                            <div class="accueil-proj__nouveau">
                                 <p>Nouveau</p>
                             </div>
-                            <div class="proj__info"> 
+                            <div class="accueil-proj__info"> 
                                 <div>
                                     <h3>La palette du goût</h3>
-                                    <h4 class="proj__description">Ménilmontant</h4>
+                                    <h4 class="accueil-proj__description">Ménilmontant</h4>
                                 </div>
-                                <div class="proj__icon">
+                                <div class="accueil-proj__icon">
                                     <i class="far fa-heart"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <div class="proj__card">
-                        <img src="./public/img/restaurants/lanoteenchantee.jpg" 
-                             alt="Photo de la palette du goût"
-                             class="proj__img">
-                        <div class="proj__nouveau">
-                            <p>Nouveau</p>
-                        </div>
-                        <div class="proj__info"> 
-                            <div>
-                                <h3>La note enchantée</h3>
-                                <h4 class="proj__description">Charonne</h4>
+                    <a href="lanoteenchantee.html" class="accueil-proj__decoration">
+                        <div class="accueil-proj__card">
+                            <img src="./public/img/restaurants/lanoteenchantee.jpg" 
+                                 alt="Photo de la palette du goût"
+                                 class="accueil-proj__img">
+                            <div class="accueil-proj__nouveau">
+                                <p>Nouveau</p>
                             </div>
-                            <div class="proj__icon">
-                                <i class="far fa-heart"></i>
+                            <div class="accueil-proj__info"> 
+                                <div>
+                                    <h3>La note enchantée</h3>
+                                    <h4 class="accueil-proj__description">Charonne</h4>
+                                </div>
+                                <div class="accueil-proj__icon">
+                                    <i class="far fa-heart"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <a href="alafrancaise.html" class="proj__decoration">
-                        <div class="proj__card">
+                    </a>
+                    <a href="alafrancaise.html" class="accueil-proj__decoration">
+                        <div class="accueil-proj__card">
                             <img src="./public/img/restaurants/alafrancaise.jpg" 
                                  alt="Photo de la palette du goût"
-                                 class="proj__img">
-                            <div class="proj__info2"> 
+                                 class="accueil-proj__img">
+                            <div class="accueil-proj__info2"> 
                                 <div> 
                                     <h3>À la française</h3>
-                                    <h4 class="proj__description">Cité Rouge</h4>
+                                    <h4 class="accueil-proj__description">Cité Rouge</h4>
                                 </div>
-                                <div class="proj__icon">
+                                <div class="accueil-proj__icon">
                                     <i class="far fa-heart"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <div class="proj__card">
-                        <img src="./public/img/restaurants/ledelicedessens.jpg" 
-                             alt="Photo de la palette du goût"
-                             class="proj__img">
-                        <div class="proj__info2"> 
-                            <div>
-                                <h3>Le délice des sens</h3>
-                                <h4 class="proj__description">Folie-Méricourt</h4>
-                            </div>
-                            <div class="proj__icon">
-                                <i class="far fa-heart"></i>
+                    <a href="ledelicedessens.html" class="accueil-proj__decoration">
+                        <div class="accueil-proj__card">
+                            <img src="./public/img/restaurants/ledelicedessens.jpg" 
+                                 alt="Photo de la palette du goût"
+                                 class="accueil-proj__img">
+                            <div class="accueil-proj__info2"> 
+                                <div>
+                                    <h3>Le délice des sens</h3>
+                                    <h4 class="accueil-proj__description">Folie-Méricourt</h4>
+                                </div>
+                                <div class="accueil-proj__icon">
+                                    <i class="far fa-heart"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -164,16 +168,24 @@
                 <h1>ohmyfood</h1>
             </div>
             <div class="footer__elements">
-                <div class="footer__lien">
-                    <i class="fas fa-utensils footer__icon"></i>
-                    <p>Proposer un restaurant</p>
-                </div>
-                <div class="footer__lien">
-                    <i class="fas fa-hands-helping footer__icon"></i>
-                    <p>Devenir partenaire</p>
-                </div>
-                <p class="footer__lien2">Mentions légales</p>
-                <p class="footer__lien3">Contact</p>
+                <a href="#" class="footer__decoration">
+                    <div class="footer__lien">
+                        <i class="fas fa-utensils footer__icon"></i>
+                        <p>Proposer un restaurant</p>
+                    </div>
+                </a>
+                <a href="#" class="footer__decoration">
+                    <div class="footer__lien">
+                        <i class="fas fa-hands-helping footer__icon2"></i>
+                        <p>Devenir partenaire</p>
+                    </div>
+                </a>
+                <a href="#" class="footer__decoration">
+                    <p class="footer__lien2">Mentions légales</p>
+                </a>
+                <a href="#" class="footer__decoration">
+                    <p class="footer__lien3">Contact</p>
+                </a>
             </div>
         </div>
     </footer>

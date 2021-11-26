@@ -17,12 +17,21 @@
     &__elements{
         color: white;
     }
+    &__decoration{
+        text-decoration: none;
+        color: white; 
+        cursor: pointer;
+    }
     &__lien{
         display: flex;
         align-items: center;
         margin-bottom: 16px;
     }
     &__icon{
+        margin-right: 30px;
+        font-size: 23px;
+    }
+    &__icon2{
         margin-right: 20px;
         font-size: 23px;
     }

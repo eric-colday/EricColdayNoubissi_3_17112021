@@ -1,6 +1,6 @@
-.palette{
+.note{
     width: 100%;
-    height: 218rem;
+    height: 234rem;
     background-color: #fafafa;
     &__marge{
         width: 90%;
@@ -17,7 +17,7 @@
     }
     &__card{
         width: 100%;
-        height:199rem;
+        height:215rem;
         margin-top: -44px;
         border-radius: 50px 50px 0 0;
         background: #fafafa;
@@ -47,7 +47,7 @@
         font-size: 40px;
         color: #686868;
         position: relative;
-        left:22%;
+        left: 23%;
         bottom: 40px;
     }
     &__btn{
@@ -57,7 +57,7 @@
     }
 }
 
-.palette-bloc{
+.note-bloc{
     &__flexbox{
         display: flex;
         flex-direction: column;
@@ -92,20 +92,24 @@
         font-size: 25px;
     }
     &__espacePrix{
-        padding-left: 27rem;
+        padding-left: 9rem;
         font-size: 25px;
     }
     &__espacePrix2{
-        padding-left: 18rem;
+        padding-left: 19rem;
         font-size: 25px;
     }
     &__espacePrix3{
-        padding-left: 10rem;
+        padding-left: 21rem;
+        font-size: 25px;
+    }
+    &__espacePrix4{
+        padding-left: 16rem;
         font-size: 25px;
     }
 }
 
-.palette-bloc2{
+.note-bloc2{
     &__largeur{
         width: 90%;
     }   
@@ -143,20 +147,20 @@
         font-size: 25px;
     }
     &__espacePrix{
-        padding-left: 5rem;
+        padding-left: 20rem;
         font-size: 25px;
     }
     &__espacePrix2{
-        padding-left: 10rem;
+        padding-left: 27rem;
         font-size: 25px;
     }
     &__espacePrix3{
-        padding-left: 37rem;
+        padding-left: 14rem;
         font-size: 25px;
     }
 }
 
-.palette-bloc3{
+.note-bloc3{
     &__largeur{
         width: 52%;
     }   
@@ -194,15 +198,15 @@
         font-size: 25px;
     }
     &__espacePrix{
-        padding-left: 42rem;
+        padding-left: 6rem;
         font-size: 25px;
     }
     &__espacePrix2{
-        padding-left: 13rem;
+        padding-left: 25rem;
         font-size: 25px;
     }
     &__espacePrix3{
-        padding-left: 8rem;
+        padding-left: 38rem;
         font-size: 25px;
     }
 }

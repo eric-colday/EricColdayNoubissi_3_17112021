@@ -23,7 +23,7 @@
              alt="Logo de Oh my food"
              class="header__logo">
     </header>
-    <main class="projet">
+    <main class="projet"> 
         <div class="projet__flexbox">
             <img src="./public/img/restaurants/alafrancaise.jpg" 
                      alt="Photo de la palette du goût"
@@ -145,7 +145,8 @@
                     </div>
                 </div>
                 <div class="projet__btn">
-                    <button class="btn"> 
+                    <button class="btn"
+                            onclick="window.location.href = 'lapalettedugout.html';"> 
                         Commander
                     </button>
                 </div>
@@ -158,16 +159,24 @@
                 <h1>ohmyfood</h1>
             </div>
             <div class="footer__elements">
-                <div class="footer__lien">
-                    <i class="fas fa-utensils footer__icon"></i>
-                    <p>Proposer un restaurant</p>
-                </div>
-                <div class="footer__lien">
-                    <i class="fas fa-hands-helping footer__icon"></i>
-                    <p>Devenir partenaire</p>
-                </div>
-                <p class="footer__lien2">Mentions légales</p>
-                <p class="footer__lien3">Contact</p>
+                <a href="#" class="footer__decoration">
+                    <div class="footer__lien">
+                        <i class="fas fa-utensils footer__icon"></i>
+                        <p>Proposer un restaurant</p>
+                    </div>
+                </a>
+                <a href="#" class="footer__decoration">
+                    <div class="footer__lien">
+                        <i class="fas fa-hands-helping footer__icon2"></i>
+                        <p>Devenir partenaire</p>
+                    </div>
+                </a>
+                <a href="#" class="footer__decoration">
+                    <p class="footer__lien2">Mentions légales</p>
+                </a>
+                <a href="#" class="footer__decoration">
+                    <p class="footer__lien3">Contact</p>
+                </a>
             </div>
         </div>
     </footer>

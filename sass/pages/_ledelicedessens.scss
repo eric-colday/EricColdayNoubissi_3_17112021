@@ -1,4 +1,4 @@
-.palette{
+.delice{ 
     width: 100%;
     height: 218rem;
     background-color: #fafafa;
@@ -47,7 +47,7 @@
         font-size: 40px;
         color: #686868;
         position: relative;
-        left:22%;
+        left: 26%;
         bottom: 40px;
     }
     &__btn{
@@ -57,7 +57,7 @@
     }
 }
 
-.palette-bloc{
+.delice-bloc{
     &__flexbox{
         display: flex;
         flex-direction: column;
@@ -92,20 +92,20 @@
         font-size: 25px;
     }
     &__espacePrix{
-        padding-left: 27rem;
+        padding-left: 29rem;
         font-size: 25px;
     }
     &__espacePrix2{
-        padding-left: 18rem;
+        padding-left: 15rem;
         font-size: 25px;
     }
     &__espacePrix3{
-        padding-left: 10rem;
+        padding-left: 39rem;
         font-size: 25px;
     }
 }
 
-.palette-bloc2{
+.delice-bloc2{
     &__largeur{
         width: 90%;
     }   
@@ -143,20 +143,20 @@
         font-size: 25px;
     }
     &__espacePrix{
-        padding-left: 5rem;
+        padding-left: 28rem;
         font-size: 25px;
     }
     &__espacePrix2{
-        padding-left: 10rem;
+        padding-left: 23rem;
         font-size: 25px;
     }
     &__espacePrix3{
-        padding-left: 37rem;
+        padding-left: 27rem;
         font-size: 25px;
     }
 }
 
-.palette-bloc3{
+.delice-bloc3{
     &__largeur{
         width: 52%;
     }   
@@ -198,11 +198,11 @@
         font-size: 25px;
     }
     &__espacePrix2{
-        padding-left: 13rem;
+        padding-left: 42rem;
         font-size: 25px;
     }
     &__espacePrix3{
-        padding-left: 8rem;
+        padding-left: 37rem;
         font-size: 25px;
     }
 }

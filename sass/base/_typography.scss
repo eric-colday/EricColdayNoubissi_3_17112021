@@ -31,6 +31,10 @@ p{
     font-size: 28px;
 }
 
+input::placeholder {
+    color: black;
+  }
+
 hr{
     border-top: 5px solid #99E2D0;
 }
