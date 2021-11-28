@@ -1,11 +1,11 @@
+
 .accueil{
     height: 510px;
     background-color: #fafafa;
-    display: flex;
-    flex-direction: column;
+    @include flexbox;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
+    text-align: center;  
     &__titre{
         margin-top: -50px;
     }
@@ -21,9 +21,9 @@
             margin-bottom: 11px;
         }
         &__flexbox{
-            display: flex;
+            @include flexbox;
             flex-direction: column;
-            align-items: center;
+            
         }
         &__marge{
             margin-bottom: 10px;
@@ -34,9 +34,8 @@
             border: 1px solid #9356DC;
             background-color: #9356DC;
             border-radius:  25px 25px 25px 25px;
-            display: flex;
+            @include flexbox;
             justify-content: center;
-            align-items: center;
             color: white;
             font-size: 25px;
             position: relative;
@@ -44,9 +43,8 @@
             bottom: -82px;
         }
         &__btn{
-            display: flex;
+            @include flexbox;
             justify-content: center;
-            align-items: center;
             font-size: 26px;
             width: 520px;
             height: 120px;
@@ -77,9 +75,9 @@
             padding-top: 79px;
         }
         &__flexbox{
-            display: flex;
+            @include flexbox;
             flex-direction: column;
-            align-items: center;
+            
         }
         &__card{
             width: 606px;
@@ -101,8 +99,7 @@
             border-radius: 4px;
             width: 134px;
             height: 50px;
-            display: flex;
-            align-items: center;
+            @include flexbox;
             justify-content: center;
             background-color: #99E2D0;
             position: relative;
@@ -113,14 +110,12 @@
             font-weight: 500;
         }
         &__info{
-            display: flex;
-            align-items: center;
+            @include flexbox;
             margin-left: 26px;
             margin-top: -24px;
         }
         &__info2{
-            display: flex;
-            align-items: center;
+            @include flexbox;
             margin-left: 26px;
             margin-top: 22px;
         }
