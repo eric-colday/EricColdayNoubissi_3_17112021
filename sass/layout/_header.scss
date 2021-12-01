@@ -1,14 +1,34 @@
 .header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: 30px;
+    width: 95%;
+    height: 9rem;
+    margin: auto;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 22px;
+        width: 666px;
+        height: unset;
+    }
+    &__flexbox{
+        display: flex;
+        align-items: center;
+    }
     &__icon{
         position: relative;
-        right: 12rem;
+        right: 2rem;
         font-size: 30px;
         color: #000;
+        @include tablet {
+            right: 1rem; 
+        }
     }
     &__logo {
         width: 300px;

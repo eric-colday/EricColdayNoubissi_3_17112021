@@ -1,6 +1,9 @@
 .footer{
     height: 37rem;
     background-color: #323232;
+    @include mobile {
+        width: 681px;
+    }
     &__margeMenus{
         margin-top: 10rem;
     }

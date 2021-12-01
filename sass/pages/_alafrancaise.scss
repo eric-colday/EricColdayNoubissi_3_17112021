@@ -2,9 +2,12 @@
     width: 100%;
     height: 218rem;
     background-color: #fafafa;
+    @include mobile{
+        width: 666px;
+    }
     &__marge{
         width: 90%;
-        margin: auto;
+        margin: auto; 
     }
     &__titre{
         margin-top: 90px;
@@ -60,9 +63,16 @@
 .bloc{
     &__flexbox{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
         margin-bottom: -46px;
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__marge{
         margin-bottom: 26px;
@@ -111,9 +121,16 @@
     }   
     &__flexbox{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
         margin-bottom: -46px;
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__marge{
         margin-bottom: 26px;
@@ -162,9 +179,16 @@
     }   
     &__flexbox{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
         margin-bottom: -46px;
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__marge{
         margin-bottom: 26px;
