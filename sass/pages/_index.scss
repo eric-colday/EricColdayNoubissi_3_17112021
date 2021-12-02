@@ -58,7 +58,10 @@
             border: 0px solid black;
             border-radius: 30px 30px 30px 30px;
             box-shadow: 0px 5px 20px 4px $couleur-gris-shadow;
-            cursor: pointer;
+            &:hover{
+                cursor: pointer;
+                background: rgb(241, 227, 255);
+            }
         }
         &__icon{
             position: relative;
@@ -67,6 +70,9 @@
         &__icon-couleur{
             color: #7c7c7c;
             font-size: 36px;
+            &:hover{
+                color: $couleur-primaire;
+            }
         }
     }
     &-proj{
@@ -101,7 +107,6 @@
             border: 0px solid black;
             border-radius: 20px 20px 20px 20px;
             box-shadow: 0px 5px 20px 4px $couleur-gris-shadow;
-            cursor: pointer;
             @include mobile{
                 width: 606px;
                 height: 443px;
@@ -178,6 +183,12 @@
             position: relative;
             left: 19%;
             bottom: 14px;
+            transition-duration: 1000ms;
+            &:hover{
+                cursor: pointer;
+                color: $couleur-secondaire;
+                transform: scale(1.4);
+            }
             @include mobile{
                 font-size: 40px;
                 left: 42%;

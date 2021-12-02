@@ -3,7 +3,7 @@
     height: 218rem;
     background-color: #fafafa;
     @include mobile{
-        width: 666px;
+        width: 681px;
     }
     &__marge{
         width: 90%;
@@ -52,6 +52,12 @@
         position: relative;
         left:22%;
         bottom: 40px;
+        transition-duration: 1000ms;
+        &:hover{
+            cursor: pointer;
+            color: $couleur-secondaire;
+            transform: scale(1.4);
+        }
     }
     &__btn{
         display: flex;
@@ -68,6 +74,7 @@
         justify-content: space-around;
         align-items: center;
         margin-bottom: -46px;
+        animation: slideDown 5s;
         @include mobile{
             display: flex;
             flex-direction: column;
@@ -89,7 +96,6 @@
         border: 0px solid black;
         border-radius: 30px 30px 30px 30px;
         box-shadow: 0px 5px 20px 4px #d5d5d5;
-        cursor: pointer;
     }
     &__hauteurTitre{
         padding-bottom: 12px;
@@ -126,6 +132,7 @@
         justify-content: space-around;
         align-items: center;
         margin-bottom: -46px;
+        animation: slideDown 5s;
         @include mobile{
             display: flex;
             flex-direction: column;
@@ -147,7 +154,10 @@
         border: 0px solid black;
         border-radius: 30px 30px 30px 30px;
         box-shadow: 0px 5px 20px 4px #d5d5d5;
-        cursor: pointer;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
     }
     &__hauteurTitre{
         padding-bottom: 12px;
@@ -184,6 +194,7 @@
         justify-content: space-around;
         align-items: center;
         margin-bottom: -46px;
+        animation: slideDown 5s;
         @include mobile{
             display: flex;
             flex-direction: column;
@@ -205,7 +216,10 @@
         border: 0px solid black;
         border-radius: 30px 30px 30px 30px;
         box-shadow: 0px 5px 20px 4px #d5d5d5;
-        cursor: pointer;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
     }
     &__hauteurTitre{
         padding-bottom: 12px;

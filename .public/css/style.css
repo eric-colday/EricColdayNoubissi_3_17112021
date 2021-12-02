@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@keyframes slideDown {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /* Propriété Box-sizing */
 *,
 *::after,
@@ -57,14 +67,22 @@ hr {
 
 .btn {
   padding: 26px 48px 26px 48px;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background-color: #9356DC;
+  background: linear-gradient(to bottom, #f479ff, #9356DC);
   border: 0px solid #9356DC;
   margin-top: 60px;
   color: white;
   font-size: 26px;
   border-radius: 45px;
   box-shadow: 0px 5px 10px 7px #d5d5d5;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.btn:hover {
   cursor: pointer;
+  transform: scale(1.1);
+  background: #f479ff;
 }
 
 .container {
@@ -227,7 +245,7 @@ hr {
 }
 @media screen and (max-width: 666px) {
   .projet {
-    width: 666px;
+    width: 681px;
   }
 }
 .projet__marge {
@@ -277,6 +295,12 @@ hr {
   position: relative;
   left: 37%;
   bottom: 40px;
+  transition-duration: 1000ms;
+}
+.projet__icon:hover {
+  cursor: pointer;
+  color: #FF79DA;
+  transform: scale(1.4);
 }
 .projet__btn {
   display: flex;
@@ -291,6 +315,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   margin-bottom: -46px;
+  animation: slideDown 5s;
 }
 @media screen and (max-width: 666px) {
   .bloc__flexbox {
@@ -349,6 +374,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   margin-bottom: -46px;
+  animation: slideDown 5s;
 }
 @media screen and (max-width: 666px) {
   .bloc2__flexbox {
@@ -407,6 +433,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   margin-bottom: -46px;
+  animation: slideDown 5s;
 }
 @media screen and (max-width: 666px) {
   .bloc3__flexbox {
@@ -521,7 +548,10 @@ hr {
   border: 0px solid black;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 0px 5px 20px 4px #d5d5d5;
+}
+.accueil-menu__btn:hover {
   cursor: pointer;
+  background: #f1e3ff;
 }
 .accueil-menu__icon {
   position: relative;
@@ -530,6 +560,9 @@ hr {
 .accueil-menu__icon-couleur {
   color: #7c7c7c;
   font-size: 36px;
+}
+.accueil-menu__icon-couleur:hover {
+  color: #9356DC;
 }
 .accueil-proj {
   width: 100%;
@@ -568,7 +601,6 @@ hr {
   border: 0px solid black;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 0px 5px 20px 4px #d5d5d5;
-  cursor: pointer;
 }
 @media screen and (max-width: 666px) {
   .accueil-proj__card {
@@ -660,6 +692,12 @@ hr {
   position: relative;
   left: 19%;
   bottom: 14px;
+  transition-duration: 1000ms;
+}
+.accueil-proj__icon:hover {
+  cursor: pointer;
+  color: #FF79DA;
+  transform: scale(1.4);
 }
 @media screen and (max-width: 666px) {
   .accueil-proj__icon {
@@ -670,12 +708,12 @@ hr {
 
 .note {
   width: 100%;
-  height: 218rem;
+  height: 233rem;
   background-color: #fafafa;
 }
 @media screen and (max-width: 666px) {
   .note {
-    width: 666px;
+    width: 681px;
   }
 }
 .note__marge {
@@ -725,6 +763,12 @@ hr {
   position: relative;
   left: 23%;
   bottom: 40px;
+  transition-duration: 1000ms;
+}
+.note__icon:hover {
+  cursor: pointer;
+  color: #FF79DA;
+  transform: scale(1.4);
 }
 .note__btn {
   display: flex;
@@ -739,6 +783,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   margin-bottom: -46px;
+  animation: slideDown 5s;
 }
 @media screen and (max-width: 666px) {
   .note-bloc__flexbox {
@@ -762,7 +807,10 @@ hr {
   border: 0px solid black;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 0px 5px 20px 4px #d5d5d5;
+}
+.note-bloc__btn:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 .note-bloc__hauteurTitre {
   padding-bottom: 12px;
@@ -801,6 +849,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   margin-bottom: -46px;
+  animation: slideDown 5s;
 }
 @media screen and (max-width: 666px) {
   .note-bloc2__flexbox {
@@ -824,7 +873,10 @@ hr {
   border: 0px solid black;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 0px 5px 20px 4px #d5d5d5;
+}
+.note-bloc2__btn:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 .note-bloc2__hauteurTitre {
   padding-bottom: 12px;
@@ -859,6 +911,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   margin-bottom: -46px;
+  animation: slideDown 5s;
 }
 @media screen and (max-width: 666px) {
   .note-bloc3__flexbox {
@@ -882,7 +935,10 @@ hr {
   border: 0px solid black;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 0px 5px 20px 4px #d5d5d5;
+}
+.note-bloc3__btn:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 .note-bloc3__hauteurTitre {
   padding-bottom: 12px;
@@ -914,7 +970,7 @@ hr {
 }
 @media screen and (max-width: 666px) {
   .palette {
-    width: 666px;
+    width: 681px;
   }
 }
 .palette__marge {
@@ -964,6 +1020,12 @@ hr {
   position: relative;
   left: 22%;
   bottom: 40px;
+  transition-duration: 1000ms;
+}
+.palette__icon:hover {
+  cursor: pointer;
+  color: #FF79DA;
+  transform: scale(1.4);
 }
 .palette__btn {
   display: flex;
@@ -978,6 +1040,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   margin-bottom: -46px;
+  animation: slideDown 5s;
 }
 @media screen and (max-width: 666px) {
   .palette-bloc__flexbox {
@@ -1001,7 +1064,6 @@ hr {
   border: 0px solid black;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 0px 5px 20px 4px #d5d5d5;
-  cursor: pointer;
 }
 .palette-bloc__hauteurTitre {
   padding-bottom: 12px;
@@ -1036,6 +1098,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   margin-bottom: -46px;
+  animation: slideDown 5s;
 }
 @media screen and (max-width: 666px) {
   .palette-bloc2__flexbox {
@@ -1059,7 +1122,10 @@ hr {
   border: 0px solid black;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 0px 5px 20px 4px #d5d5d5;
+}
+.palette-bloc2__btn:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 .palette-bloc2__hauteurTitre {
   padding-bottom: 12px;
@@ -1094,6 +1160,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   margin-bottom: -46px;
+  animation: slideDown 5s;
 }
 @media screen and (max-width: 666px) {
   .palette-bloc3__flexbox {
@@ -1117,7 +1184,10 @@ hr {
   border: 0px solid black;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 0px 5px 20px 4px #d5d5d5;
+}
+.palette-bloc3__btn:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 .palette-bloc3__hauteurTitre {
   padding-bottom: 12px;
@@ -1199,6 +1269,12 @@ hr {
   position: relative;
   left: 26%;
   bottom: 40px;
+  transition-duration: 1000ms;
+}
+.delice__icon:hover {
+  cursor: pointer;
+  color: #FF79DA;
+  transform: scale(1.4);
 }
 .delice__btn {
   display: flex;
@@ -1213,6 +1289,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   margin-bottom: -46px;
+  animation: slideDown 5s;
 }
 @media screen and (max-width: 666px) {
   .delice-bloc__flexbox {
@@ -1271,6 +1348,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   margin-bottom: -46px;
+  animation: slideDown 5s;
 }
 @media screen and (max-width: 666px) {
   .delice-bloc2__flexbox {
@@ -1329,6 +1407,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   margin-bottom: -46px;
+  animation: slideDown 5s;
 }
 @media screen and (max-width: 666px) {
   .delice-bloc3__flexbox {

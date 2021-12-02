@@ -3,6 +3,18 @@
     align-items: center;
 }
 
+@keyframes slideDown {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 @mixin desktop {
     @media screen and (max-width: 1800px) {
         @content;

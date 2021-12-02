@@ -52,6 +52,12 @@
         position: relative;
         left: 26%;
         bottom: 40px;
+        transition-duration: 1000ms;
+        &:hover{
+            cursor: pointer;
+            color: $couleur-secondaire;
+            transform: scale(1.4);
+        }
     }
     &__btn{
         display: flex;
@@ -68,6 +74,7 @@
         justify-content: space-around;
         align-items: center;
         margin-bottom: -46px;
+        animation: slideDown 5s;
         @include mobile{
             display: flex;
             flex-direction: column;
@@ -126,6 +133,7 @@
         justify-content: space-around;
         align-items: center;
         margin-bottom: -46px;
+        animation: slideDown 5s;
         @include mobile{
             display: flex;
             flex-direction: column;
@@ -184,6 +192,7 @@
         justify-content: space-around;
         align-items: center;
         margin-bottom: -46px;
+        animation: slideDown 5s;
         @include mobile{
             display: flex;
             flex-direction: column;
