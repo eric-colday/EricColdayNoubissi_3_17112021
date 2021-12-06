@@ -20,6 +20,15 @@
     }  
 }
 
+@keyframes animation {
+    0% {
+        transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 @mixin desktop {
     @media screen and (max-width: 1800px) {

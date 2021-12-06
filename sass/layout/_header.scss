@@ -34,3 +34,11 @@
         width: 300px;
     }
 }
+
+$prog-bar-dur: 1000ms;
+$prog-bar-delay: 150ms;
+$cat-delay: $prog-bar-dur + $prog-bar-delay;
+
+.animation {
+    animation: cat 1000ms $cat-delay;
+}
