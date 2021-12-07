@@ -312,12 +312,19 @@ hr {
   position: relative;
   left: 37%;
   bottom: 40px;
-  transition-duration: 1000ms;
-}
-.projet__icon:hover {
   cursor: pointer;
+}
+.projet__icon:active > .projet__icon-2 {
   color: #FF79DA;
   transform: scale(1.4);
+}
+.projet__icon-2 {
+  font-size: 40px;
+  color: #686868;
+  position: relative;
+  left: 50px;
+  transform: scale(0);
+  transition: transform 400ms;
 }
 .projet__btn {
   display: flex;
@@ -736,20 +743,27 @@ hr {
   font-size: 24px;
   color: #686868;
   position: relative;
-  left: 19%;
+  left: 19px;
   bottom: 14px;
-  transition-duration: 1000ms;
-}
-.accueil-proj__icon:hover {
   cursor: pointer;
+}
+.accueil-proj__icon:active > .accueil-proj__icon-2 {
   color: #FF79DA;
-  transform: scale(1.4);
+  transform: scale(1.15);
 }
 @media screen and (max-width: 666px) {
   .accueil-proj__icon {
     font-size: 40px;
     left: 42%;
   }
+}
+.accueil-proj__icon-2 {
+  font-size: 24px;
+  color: #686868;
+  position: relative;
+  left: 30px;
+  transform: scale(0);
+  transition: transform 400ms;
 }
 
 .note {
@@ -809,12 +823,19 @@ hr {
   position: relative;
   left: 23%;
   bottom: 40px;
-  transition-duration: 1000ms;
-}
-.note__icon:hover {
   cursor: pointer;
+}
+.note__icon:active > .note__icon-2 {
   color: #FF79DA;
   transform: scale(1.4);
+}
+.note__icon-2 {
+  font-size: 40px;
+  color: #686868;
+  position: relative;
+  left: 50px;
+  transform: scale(0);
+  transition: transform 400ms;
 }
 .note__btn {
   display: flex;
@@ -1066,12 +1087,19 @@ hr {
   position: relative;
   left: 22%;
   bottom: 40px;
-  transition-duration: 1000ms;
-}
-.palette__icon:hover {
   cursor: pointer;
+}
+.palette__icon:active > .palette__icon-2 {
   color: #FF79DA;
   transform: scale(1.4);
+}
+.palette__icon-2 {
+  font-size: 40px;
+  color: #686868;
+  position: relative;
+  left: 50px;
+  transform: scale(0);
+  transition: transform 400ms;
 }
 .palette__btn {
   display: flex;
@@ -1079,6 +1107,14 @@ hr {
   padding-top: 50px;
 }
 
+/*.palette__icon-2 {
+    font-size: 40px;
+    color: #686868;
+    position: relative;
+    left:50%;
+    bottom: 40px;
+    transition: transform 4000ms;
+} */
 .palette-bloc__flexbox {
   display: flex;
   flex-wrap: wrap;
@@ -1348,12 +1384,19 @@ hr {
   position: relative;
   left: 26%;
   bottom: 40px;
-  transition-duration: 1000ms;
-}
-.delice__icon:hover {
   cursor: pointer;
+}
+.delice__icon:active > .delice__icon-2 {
   color: #FF79DA;
   transform: scale(1.4);
+}
+.delice__icon-2 {
+  font-size: 40px;
+  color: #686868;
+  position: relative;
+  left: 50px;
+  transform: scale(0);
+  transition: transform 400ms;
 }
 .delice__btn {
   display: flex;

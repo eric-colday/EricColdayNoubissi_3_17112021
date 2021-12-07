@@ -52,12 +52,19 @@
         position: relative;
         left: 26%;
         bottom: 40px;
-        transition-duration: 1000ms;
-        &:hover{
-            cursor: pointer;
+        cursor: pointer;
+        &:active > .delice__icon-2{
             color: $couleur-secondaire;
             transform: scale(1.4);
         }
+    }
+    &__icon-2 {
+        font-size: 40px;
+        color: #686868;
+        position: relative;
+        left: 50px;
+        transform: scale(0);
+        transition: transform 400ms;
     }
     &__btn{
         display: flex;

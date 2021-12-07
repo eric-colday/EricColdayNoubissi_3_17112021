@@ -217,18 +217,25 @@ $cat-delay: $prog-bar-dur + $prog-bar-delay;
             font-size: 24px;
             color: #686868;
             position: relative;
-            left: 19%;
+            left: 19px;
             bottom: 14px;
-            transition-duration: 1000ms;
-            &:hover{
-                cursor: pointer;
+            cursor: pointer;
+            &:active > .accueil-proj__icon-2{
                 color: $couleur-secondaire;
-                transform: scale(1.4);
+                transform: scale(1.15);
             }
             @include mobile{
                 font-size: 40px;
                 left: 42%;
             }
+        }
+        &__icon-2{
+            font-size: 24px;
+            color: #686868;
+            position: relative;
+            left: 30px;
+            transform: scale(0);
+            transition: transform 400ms;
         }
     }
 }  
