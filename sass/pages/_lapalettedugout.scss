@@ -98,7 +98,7 @@
         }
     }
     &__marge{
-        margin-bottom: 26px;
+        margin-bottom: -99px;
     }
     &__btn{
         display: flex;
@@ -120,13 +120,6 @@
                 transform: scaleX(1);
                 & > .palette-bloc__progress--rotate {
                     transform: rotate(0turn);
-                }
-            }
-        }
-        &:hover {
-            & + .palette-bloc__description {
-                & > .palette-bloc__espacePrix{
-                    transform: translate(150px, -7vw);
                 }
             }
         }
@@ -165,16 +158,38 @@
         font-size: 25px;
     }
     &__espacePrix{
+        white-space: nowrap;
         padding-left: 27rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
     &__espacePrix2{
         padding-left: 18rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
     &__espacePrix3{
         padding-left: 10rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
 }
 
@@ -197,7 +212,7 @@
         }
     }
     &__marge{
-        margin-bottom: 26px;
+        margin-bottom: -99px;
     }
     &__btn{
         display: flex;
@@ -211,9 +226,38 @@
         border: 0px solid black;
         border-radius: 30px 30px 30px 30px;
         box-shadow: 0px 5px 20px 4px #d5d5d5;
-        &:hover{
-            cursor: pointer;
-            transform: scale(1.1);
+
+        //  Animation bouton
+        &:hover {
+            & + .palette-bloc2__progress {
+                transform: scaleX(1);
+                & > .palette-bloc2__progress--rotate {
+                    transform: rotate(0turn);
+                }
+            }
+        }
+    }
+    &__progress{
+        position: relative;
+        left: 470px;
+        bottom: 12rem;
+        background-color: $couleur-tertiaire;
+        border: 0px solid black;
+        border-radius: 0 30px 30px 0;
+        width: 130px;
+        height: 121px;
+        display: flex;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        transform: scaleX(0);
+        transform-origin: right 100%;
+        transition: transform 500ms cubic-bezier(.32,0,0.7,1);
+        &--rotate {
+            font-size: 40px;
+            color: white;
+            transform: rotate(-1turn);
+            transition: transform 500ms ease-in-out;
         }
     }
     &__hauteurTitre{
@@ -229,14 +273,35 @@
     &__espacePrix{
         padding-left: 5rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
     &__espacePrix2{
         padding-left: 10rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
     &__espacePrix3{
         padding-left: 37rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
 }
 
@@ -259,7 +324,7 @@
         }
     }
     &__marge{
-        margin-bottom: 26px;
+        margin-bottom: -99px;
     }
     &__btn{
         display: flex;
@@ -273,9 +338,38 @@
         border: 0px solid black;
         border-radius: 30px 30px 30px 30px;
         box-shadow: 0px 5px 20px 4px #d5d5d5;
-        &:hover{
-            cursor: pointer;
-            transform: scale(1.1);
+
+        //  Animation bouton
+        &:hover {
+            & + .palette-bloc3__progress {
+                transform: scaleX(1);
+                & > .palette-bloc3__progress--rotate {
+                    transform: rotate(0turn);
+                }
+            }
+        }
+    }
+    &__progress{
+        position: relative;
+        left: 470px;
+        bottom: 12rem;
+        background-color: $couleur-tertiaire;
+        border: 0px solid black;
+        border-radius: 0 30px 30px 0;
+        width: 130px;
+        height: 121px;
+        display: flex;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        transform: scaleX(0);
+        transform-origin: right 100%;
+        transition: transform 500ms cubic-bezier(.32,0,0.7,1);
+        &--rotate {
+            font-size: 40px;
+            color: white;
+            transform: rotate(-1turn);
+            transition: transform 500ms ease-in-out;
         }
     }
     &__hauteurTitre{
@@ -291,13 +385,34 @@
     &__espacePrix{
         padding-left: 42rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
     &__espacePrix2{
         padding-left: 13rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
     &__espacePrix3{
         padding-left: 8rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
 }

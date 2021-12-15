@@ -89,7 +89,7 @@
         }
     }
     &__marge{
-        margin-bottom: 26px;
+        margin-bottom: -93px;
     }
     &__btn{
         display: flex;
@@ -104,6 +104,39 @@
         border-radius: 30px 30px 30px 30px;
         box-shadow: 0px 5px 20px 4px #d5d5d5;
         cursor: pointer;
+
+        //  Animation bouton
+        &:hover {
+            & + .delice-bloc__progress {
+                transform: scaleX(1);
+                & > .delice-bloc__progress--rotate {
+                    transform: rotate(0turn);
+                }
+            }
+        }
+    }
+    &__progress{
+        position: relative;
+        left: 470px;
+        bottom: 12rem;
+        background-color: $couleur-tertiaire;
+        border: 0px solid black;
+        border-radius: 0 30px 30px 0;
+        width: 130px;
+        height: 121px;
+        display: flex;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        transform: scaleX(0);
+        transform-origin: right 100%;
+        transition: transform 500ms cubic-bezier(.32,0,0.7,1);
+        &--rotate {
+            font-size: 40px;
+            color: white;
+            transform: rotate(-1turn);
+            transition: transform 500ms ease-in-out;
+        }
     }
     &__hauteurTitre{
         padding-bottom: 12px;
@@ -118,14 +151,35 @@
     &__espacePrix{
         padding-left: 29rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
     &__espacePrix2{
         padding-left: 15rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
     &__espacePrix3{
         padding-left: 39rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
 }
 
@@ -148,7 +202,7 @@
         }
     }
     &__marge{
-        margin-bottom: 26px;
+        margin-bottom: -93px;
     }
     &__btn{
         display: flex;
@@ -163,6 +217,39 @@
         border-radius: 30px 30px 30px 30px;
         box-shadow: 0px 5px 20px 4px #d5d5d5;
         cursor: pointer;
+
+         //  Animation bouton
+         &:hover {
+            & + .delice-bloc2__progress {
+                transform: scaleX(1);
+                & > .delice-bloc2__progress--rotate {
+                    transform: rotate(0turn);
+                }
+            }
+        }
+    }
+    &__progress{
+        position: relative;
+        left: 470px;
+        bottom: 12rem;
+        background-color: $couleur-tertiaire;
+        border: 0px solid black;
+        border-radius: 0 30px 30px 0;
+        width: 130px;
+        height: 121px;
+        display: flex;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        transform: scaleX(0);
+        transform-origin: right 100%;
+        transition: transform 500ms cubic-bezier(.32,0,0.7,1);
+        &--rotate {
+            font-size: 40px;
+            color: white;
+            transform: rotate(-1turn);
+            transition: transform 500ms ease-in-out;
+        }
     }
     &__hauteurTitre{
         padding-bottom: 12px;
@@ -177,14 +264,35 @@
     &__espacePrix{
         padding-left: 28rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
     &__espacePrix2{
         padding-left: 23rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
     &__espacePrix3{
         padding-left: 27rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
 }
 
@@ -207,7 +315,7 @@
         }
     }
     &__marge{
-        margin-bottom: 26px;
+        margin-bottom: -93px;
     }
     &__btn{
         display: flex;
@@ -222,6 +330,39 @@
         border-radius: 30px 30px 30px 30px;
         box-shadow: 0px 5px 20px 4px #d5d5d5;
         cursor: pointer;
+
+         //  Animation bouton
+         &:hover {
+            & + .delice-bloc3__progress {
+                transform: scaleX(1);
+                & > .delice-bloc3__progress--rotate {
+                    transform: rotate(0turn);
+                }
+            }
+        }
+    }
+    &__progress{
+        position: relative;
+        left: 470px;
+        bottom: 12rem;
+        background-color: $couleur-tertiaire;
+        border: 0px solid black;
+        border-radius: 0 30px 30px 0;
+        width: 130px;
+        height: 121px;
+        display: flex;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        transform: scaleX(0);
+        transform-origin: right 100%;
+        transition: transform 500ms cubic-bezier(.32,0,0.7,1);
+        &--rotate {
+            font-size: 40px;
+            color: white;
+            transform: rotate(-1turn);
+            transition: transform 500ms ease-in-out;
+        }
     }
     &__hauteurTitre{
         padding-bottom: 12px;
@@ -236,13 +377,34 @@
     &__espacePrix{
         padding-left: 42rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
     &__espacePrix2{
         padding-left: 42rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
     &__espacePrix3{
         padding-left: 37rem;
         font-size: 25px;
+        position: relative;
+        right: 0;
+        transition: right .25s, transform 1s;
+        &:hover{
+            right: 20%;
+	        transform: translateX(0%);
+        }
     }
 }
