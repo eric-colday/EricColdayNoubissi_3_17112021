@@ -17,5 +17,6 @@
         cursor: pointer;
         transform: scale(1.1);
         background: $couleur-secondaire;
+        box-shadow: 0px 8px 14px 9px $couleur-gris-shadow;
     }
 }

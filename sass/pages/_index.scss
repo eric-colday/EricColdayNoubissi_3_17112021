@@ -1,34 +1,35 @@
 
-// Loading spinner 
+/* Loading spinner */
+
 .loader {
-    position: absolute;
-    left: 92rem;
-    bottom: 29rem;
+    position: fixed;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    color: white;
-    @include tablet {
-        left: 34rem;
-        bottom: 8rem;   
-    }
-    @include mobile {
-        left: 30rem;
-        bottom: -3rem;   
+    flex-wrap: wrap;
+    z-index: 0;
+    animation: loader 3s cubic-bezier(0, 0, 0.13, -0.83);
+    &__spin {
+        margin: auto;
+        border: 10px solid blueviolet;
+        border-top-color: cornsilk;
+        border-bottom-color: cornsilk;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+        z-index: 0;
+        animation: spin 3s;
     }
 }
 
-.loader::after {
-    content: "";
-    width: 50px;
-    height: 50px;
-    border: 10px solid blueviolet;
-    border-top-color: cornsilk;
-    border-bottom-color: cornsilk;
-    border-radius: 50%;
-    animation: loading 1s ease infinite;
-}
+
+
+
 
 
 // ACCUEIL SLIDER
@@ -147,6 +148,14 @@
             border: 0px solid black;
             border-radius: 20px 20px 20px 20px;
             box-shadow: 0px 5px 20px 4px $couleur-gris-shadow;
+            transform: scale(1);
+            transition-property: transform;
+            transition-duration: 1000ms;
+            &:hover{
+               cursor: pointer;
+               transform: scale(1.1);
+               box-shadow: 0px 8px 14px 9px $couleur-gris-shadow;
+            }
             @include mobile{
                 width: 606px;
                 height: 443px;
@@ -224,7 +233,7 @@
             left: 19px;
             bottom: 14px;
             cursor: pointer;
-            &:active > .accueil-proj__icon-2{
+            &:hover > .accueil-proj__icon-2{
                 color: $couleur-secondaire;
                 transform: scale(1.15);
             }

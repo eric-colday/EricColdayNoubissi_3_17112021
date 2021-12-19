@@ -1,8 +1,10 @@
+/* FlexBox */ 
 @mixin flexbox {
     display: flex;
     align-items: center;
 }
 
+/* Animation SlideDown */ 
 @keyframes slideDown {
     from {
         transform: translateY(20px);
@@ -14,22 +16,59 @@
     }
 }
 
-@keyframes loading {
-    to{
-        transform: rotate(1turn);
-    }  
+/* Loading spinner */ 
+@keyframes spin {
+    1% {
+        opacity: 10;
+        transform: rotate(
+    0deg) scale(1);
+        z-index: 101;
+    }
+    100% {
+        transform: rotate(
+    360deg) scale(1.5);
+        opacity: 0;
+    }
 }
 
-@keyframes animation {
+@keyframes loader {
+    1% {
+        background: linear-gradient(to top, #9256dc, #ff79d9);
+        z-index: 101;
+        width: 100%;
+        height: 100%;
+    }
+    15% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    75% {
+        opacity: 0.4;
+    }
+    85% {
+        opacity: 0.3;
+    }
+    95% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* @keyframes animation {
     0% {
         transform: translateX(-9999px);
     }
     100% {
         transform: translateX(0);
     }
-}
+} */
 
 
+/* Responsive */
 @mixin desktop {
     @media screen and (max-width: 1800px) {
         @content;
