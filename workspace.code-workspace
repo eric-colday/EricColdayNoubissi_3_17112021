@@ -1,9 +1,11 @@
 {
 	"folders": [
 		{
-			"name": "food",
+			"name": "ohmyfood",
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
 }

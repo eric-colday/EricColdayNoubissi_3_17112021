@@ -53,7 +53,7 @@
         left: 23%;
         bottom: 40px;
         cursor: pointer;
-        &:active > .note__icon-2{
+        &:hover > .note__icon-2{
             color: $couleur-secondaire;
             transform: scale(1.4);
         }
@@ -88,14 +88,11 @@
             align-items: center;
         }
     }
+    /* MENUS PALETTE */
     &__marge{
-        margin-bottom: -93px;
+        margin-bottom: 15px;
     }
     &__btn{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 26px;
         width: 600px;
         height: 120px;
         padding-left: 20px;
@@ -103,318 +100,85 @@
         border: 0px solid black;
         border-radius: 30px 30px 30px 30px;
         box-shadow: 0px 5px 20px 4px #d5d5d5;
-
-        //  Animation bouton
-        &:hover {
-            & + .note-bloc__progress {
-                transform: scaleX(1);
-                & > .note-bloc__progress--rotate {
-                    transform: rotate(0turn);
-                }
-            }
-        }
     }
-    &__progress{
-        position: relative;
-        left: 470px;
-        bottom: 12rem;
-        background-color: $couleur-tertiaire;
-        border: 0px solid black;
-        border-radius: 0 30px 30px 0;
-        width: 130px;
-        height: 121px;
+    &__Choice{
         display: flex;
-        align-content: space-around;
-        justify-content: center;
         align-items: center;
-        transform: scaleX(0);
-        transform-origin: right 100%;
-        transition: transform 500ms cubic-bezier(.32,0,0.7,1);
-        &--rotate {
-            font-size: 40px;
-            color: white;
-            transform: rotate(-1turn);
-            transition: transform 500ms ease-in-out;
-        }
+        cursor: pointer;
+    }
+    &__Title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 490px;
+        height: 176px;
     }
     &__hauteurTitre{
-        padding-bottom: 12px;
-    }
-    &__description{
-        display: flex;
-        align-items: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+        top: 21px;
+        font-size: 32px;
     }
     &__espaceSousTitre{
-        font-size: 25px;
-    }
-    &__espacePrix{
-        padding-left: 9rem;
-        font-size: 25px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #686868;
         position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
-    }
-    &__espacePrix2{
-        padding-left: 19rem;
+        bottom: -27px;
+        right: 1px;
         font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
     }
-    &__espacePrix3{
-        padding-left: 21rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
-    }
-    &__espacePrix4{
-        padding-left: 16rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
-    }
-}
-
-.note-bloc2{
     &__largeur{
-        width: 90%;
-    }   
-    &__flexbox{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin-bottom: -46px;
-        animation: slideDown 5s;
-        @include mobile{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        width: 88%;
     }
-    &__marge{
-        margin-bottom: -93px;
+    &__largeur2{
+        width: 89%;
     }
-    &__btn{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 26px;
-        width: 600px;
-        height: 120px;
-        padding-left: 20px;
-        background-color: #fafafa;
-        border: 0px solid black;
-        border-radius: 30px 30px 30px 30px;
-        box-shadow: 0px 5px 20px 4px #d5d5d5;
-        //  Animation bouton
-        &:hover {
-            & + .note-bloc2__progress {
-                transform: scaleX(1);
-                & > .note-bloc2__progress--rotate {
-                    transform: rotate(0turn);
-                }
-            }
-        }
+    &__largeur3{
+        width: 97%;
     }
-    &__progress{
-        position: relative;
-        left: 470px;
-        bottom: 12rem;
-        background-color: $couleur-tertiaire;
-        border: 0px solid black;
-        border-radius: 0 30px 30px 0;
-        width: 130px;
-        height: 121px;
-        display: flex;
-        align-content: space-around;
-        justify-content: center;
-        align-items: center;
-        transform: scaleX(0);
-        transform-origin: right 100%;
-        transition: transform 500ms cubic-bezier(.32,0,0.7,1);
-        &--rotate {
-            font-size: 40px;
-            color: white;
-            transform: rotate(-1turn);
-            transition: transform 500ms ease-in-out;
-        }
+    &__largeur4{
+        width: 94%;
     }
-    &__hauteurTitre{
-        padding-bottom: 12px;
-    }
-    &__description{
-        display: flex;
-        align-items: center;
-    }
-    &__espaceSousTitre{
-        font-size: 25px;
-    }
-    &__espacePrix{
-        padding-left: 20rem;
+    &__Price {
         font-size: 25px;
         position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
-    }
-    &__espacePrix2{
-        padding-left: 27rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
-    }
-    &__espacePrix3{
-        padding-left: 14rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
+        right: 12px;
+        bottom: 3px;
+        padding-left: 3rem;
     }
 }
 
-.note-bloc3{
-    &__largeur{
-        width: 52%;
-    }   
-    &__flexbox{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin-bottom: -46px;
-        animation: slideDown 5s;
-        @include mobile{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-    &__marge{
-        margin-bottom: -93px;
-    }
-    &__btn{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 26px;
-        width: 600px;
-        height: 120px;
-        padding-left: 20px;
-        background-color: #fafafa;
-        border: 0px solid black;
-        border-radius: 30px 30px 30px 30px;
-        box-shadow: 0px 5px 20px 4px #d5d5d5;
-        //  Animation bouton
-        &:hover {
-            & + .note-bloc3__progress {
-                transform: scaleX(1);
-                & > .note-bloc3__progress--rotate {
-                    transform: rotate(0turn);
-                }
-            }
-        }
-    }
-    &__progress{
-        position: relative;
-        left: 470px;
-        bottom: 12rem;
-        background-color: $couleur-tertiaire;
-        border: 0px solid black;
-        border-radius: 0 30px 30px 0;
-        width: 130px;
-        height: 121px;
-        display: flex;
-        align-content: space-around;
-        justify-content: center;
-        align-items: center;
-        transform: scaleX(0);
-        transform-origin: right 100%;
-        transition: transform 500ms cubic-bezier(.32,0,0.7,1);
-        &--rotate {
-            font-size: 40px;
-            color: white;
-            transform: rotate(-1turn);
-            transition: transform 500ms ease-in-out;
-        }
-    }
-    &__hauteurTitre{
-        padding-bottom: 12px;
-    }
-    &__description{
-        display: flex;
-        align-items: center;
-    }
-    &__espaceSousTitre{
-        font-size: 25px;
-    }
-    &__espacePrix{
-        padding-left: 6rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
-    }
-    &__espacePrix2{
-        padding-left: 25rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
-    }
-    &__espacePrix3{
-        padding-left: 38rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
-    }
+input[type=radio] {
+    display: none;
 }
-
-
-
-
+  
+label .fas {
+    border-radius: 0px 15px 15px 0px;
+    height: 78px;
+    color: transparent;
+}
+  
+input[type=radio]:checked + .fas {
+    position: relative;
+    bottom: 28px;
+    width: 84px;
+    height: 120px;
+    border-radius: 0px 30px 30px 0px;
+    background-color: #99e2d0;
+    transition-duration: 0.01s;
+    animation: check 0.5s ease-in reverse both;
+}
+  
+.fa-check-circle:before {
+    font-size: 2.4rem;
+    position: relative;
+    top: 52px;
+    animation: arrow 0.1s linear;
+}  

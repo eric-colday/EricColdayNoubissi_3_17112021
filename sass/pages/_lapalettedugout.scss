@@ -53,7 +53,7 @@
         left:22%;
         bottom: 40px;
         cursor: pointer;
-        &:active > .palette__icon-2{
+        &:hover > .palette__icon-2{
             color: $couleur-secondaire;
             transform: scale(1.4);
         }
@@ -97,14 +97,11 @@
             align-items: center;
         }
     }
+    /* MENUS PALETTE */
     &__marge{
-        margin-bottom: -99px;
+        margin-bottom: 15px;
     }
     &__btn{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 26px;
         width: 600px;
         height: 120px;
         padding-left: 20px;
@@ -112,309 +109,98 @@
         border: 0px solid black;
         border-radius: 30px 30px 30px 30px;
         box-shadow: 0px 5px 20px 4px #d5d5d5;
+    }
+    &__Choice{
+        display: flex;
+        align-items: center;
         cursor: pointer;
-        
-        //  Animation bouton
-        &:hover {
-            & + .palette-bloc__progress {
-                transform: scaleX(1);
-                & > .palette-bloc__progress--rotate {
-                    transform: rotate(0turn);
-                }
-            }
-        }
     }
-    &__progress{
-        position: relative;
-        left: 470px;
-        bottom: 12rem;
-        background-color: $couleur-tertiaire;
-        border: 0px solid black;
-        border-radius: 0 30px 30px 0;
-        width: 130px;
-        height: 121px;
-        display: flex;
-        align-content: space-around;
-        justify-content: center;
-        align-items: center;
-        transform: scaleX(0);
-        transform-origin: right 100%;
-        transition: transform 500ms cubic-bezier(.32,0,0.7,1);
-        &--rotate {
-            font-size: 40px;
-            color: white;
-            transform: rotate(-1turn);
-            transition: transform 500ms ease-in-out;
-        }
-    }
-    &__hauteurTitre{ 
-        padding-bottom: 12px;
-    }
-    &__description{
-        display: flex;
-        align-items: center;
-    }
-    &__espaceSousTitre{
-        font-size: 25px;
-    }
-    &__espacePrix{
-        white-space: nowrap;
-        padding-left: 27rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
-    }
-    &__espacePrix2{
-        padding-left: 18rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
-    }
-    &__espacePrix3{
-        padding-left: 10rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
-    }
-}
-
-.palette-bloc2{
-    &__largeur{
-        width: 90%;
-    }   
-    &__flexbox{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin-bottom: -46px;
-        animation: slideDown 5s;
-        @include mobile{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-    &__marge{
-        margin-bottom: -99px;
-    }
-    &__btn{
+    &__Title{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        font-size: 26px;
-        width: 600px;
-        height: 120px;
-        padding-left: 20px;
-        background-color: #fafafa;
-        border: 0px solid black;
-        border-radius: 30px 30px 30px 30px;
-        box-shadow: 0px 5px 20px 4px #d5d5d5;
-
-        //  Animation bouton
-        &:hover {
-            & + .palette-bloc2__progress {
-                transform: scaleX(1);
-                & > .palette-bloc2__progress--rotate {
-                    transform: rotate(0turn);
-                }
-            }
-        }
-    }
-    &__progress{
-        position: relative;
-        left: 470px;
-        bottom: 12rem;
-        background-color: $couleur-tertiaire;
-        border: 0px solid black;
-        border-radius: 0 30px 30px 0;
-        width: 130px;
-        height: 121px;
-        display: flex;
-        align-content: space-around;
-        justify-content: center;
-        align-items: center;
-        transform: scaleX(0);
-        transform-origin: right 100%;
-        transition: transform 500ms cubic-bezier(.32,0,0.7,1);
-        &--rotate {
-            font-size: 40px;
-            color: white;
-            transform: rotate(-1turn);
-            transition: transform 500ms ease-in-out;
-        }
-    }
-    &__hauteurTitre{
-        padding-bottom: 12px;
-    }
-    &__description{
-        display: flex;
-        align-items: center;
-    }
-    &__espaceSousTitre{
-        font-size: 25px;
+        align-items: flex-start;
+        white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-    }
-    &__espacePrix{
-        padding-left: 5rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
-    }
-    &__espacePrix2{
-        padding-left: 10rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
-    }
-    &__espacePrix3{
-        padding-left: 37rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
-    }
-}
-
-.palette-bloc3{
-    &__largeur{
-        width: 52%;
-    }   
-    &__flexbox{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin-bottom: -46px;
-        animation: slideDown 5s;
-        @include mobile{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-    &__marge{
-        margin-bottom: -99px;
-    }
-    &__btn{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 26px;
-        width: 600px;
-        height: 120px;
-        padding-left: 20px;
-        background-color: #fafafa;
-        border: 0px solid black;
-        border-radius: 30px 30px 30px 30px;
-        box-shadow: 0px 5px 20px 4px #d5d5d5;
-
-        //  Animation bouton
-        &:hover {
-            & + .palette-bloc3__progress {
-                transform: scaleX(1);
-                & > .palette-bloc3__progress--rotate {
-                    transform: rotate(0turn);
-                }
-            }
-        }
-    }
-    &__progress{
-        position: relative;
-        left: 470px;
-        bottom: 12rem;
-        background-color: $couleur-tertiaire;
-        border: 0px solid black;
-        border-radius: 0 30px 30px 0;
-        width: 130px;
-        height: 121px;
-        display: flex;
-        align-content: space-around;
-        justify-content: center;
-        align-items: center;
-        transform: scaleX(0);
-        transform-origin: right 100%;
-        transition: transform 500ms cubic-bezier(.32,0,0.7,1);
-        &--rotate {
-            font-size: 40px;
-            color: white;
-            transform: rotate(-1turn);
-            transition: transform 500ms ease-in-out;
-        }
+        width: 490px;
+        height: 176px;
     }
     &__hauteurTitre{
-        padding-bottom: 12px;
-    }
-    &__description{
-        display: flex;
-        align-items: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+        top: 21px;
+        font-size: 32px;
     }
     &__espaceSousTitre{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #686868;
+        position: relative;
+        bottom: -27px;
+        right: 1px;
         font-size: 25px;
     }
-    &__espacePrix{
-        padding-left: 42rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
+    &__largeur{
+        width: 82%;
     }
-    &__espacePrix2{
-        padding-left: 13rem;
-        font-size: 25px;
-        position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
+    &__largeur2{
+        width: 85%;
     }
-    &__espacePrix3{
-        padding-left: 8rem;
+    &__largeur3{
+        width: 97%;
+    }
+    &__largeur4{
+        width: 91%;
+    }
+    &__largeur5{
+        width: 99%;
+    }
+    &__largeur6{
+        width: 85%;
+    }
+    &__largeur7{
+        width: 85%;
+    }
+    &__Price {
         font-size: 25px;
         position: relative;
-        right: 0;
-        transition: right .25s, transform 1s;
-        &:hover{
-            right: 20%;
-	        transform: translateX(0%);
-        }
+        right: 12px;
+        bottom: 3px;
+        padding-left: 3rem;
     }
 }
+
+input[type=radio] {
+  display: none;
+}
+
+label .fas {
+  border-radius: 0px 15px 15px 0px;
+  height: 78px;
+  color: transparent;
+}
+
+input[type=radio]:checked + .fas {
+  position: relative;
+  bottom: 28px;
+  width: 84px;
+  height: 120px;
+  border-radius: 0px 30px 30px 0px;
+  background-color: #99e2d0;
+  transition-duration: 0.01s;
+  animation: check 0.5s ease-in reverse both;
+}
+
+.fa-check-circle:before {
+  font-size: 2.4rem;
+  position: relative;
+  top: 52px;
+  animation: arrow 0.1s linear;
+}
+
+
+
+

@@ -67,6 +67,27 @@
     }
 } */
 
+/* animation rotate circle */
+@keyframes arrow {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(-1turn);
+    }
+}
+
+/* animation for checks */
+@keyframes check {
+  0% {
+  color: white;
+  width: 150px;
+  }
+  100% {
+  width: 80px;
+  }
+}
+
 
 /* Responsive */
 @mixin desktop {
