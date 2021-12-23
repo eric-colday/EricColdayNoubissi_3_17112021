@@ -440,6 +440,8 @@ hr {
   overflow: hidden;
   position: relative;
   top: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
   font-size: 32px;
 }
 .alafrancaise-bloc__espaceSousTitre {
@@ -450,6 +452,8 @@ hr {
   position: relative;
   bottom: -27px;
   right: 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 25px;
 }
 .alafrancaise-bloc__largeur {
@@ -892,6 +896,8 @@ input[type=radio]:checked + .fas {
   overflow: hidden;
   position: relative;
   top: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
   font-size: 32px;
 }
 .note-bloc__espaceSousTitre {
@@ -902,6 +908,8 @@ input[type=radio]:checked + .fas {
   position: relative;
   bottom: -27px;
   right: 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 25px;
 }
 .note-bloc__largeur {
@@ -1089,6 +1097,8 @@ input[type=radio]:checked + .fas {
   overflow: hidden;
   position: relative;
   top: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
   font-size: 32px;
 }
 .palette-bloc__espaceSousTitre {
@@ -1099,6 +1109,8 @@ input[type=radio]:checked + .fas {
   position: relative;
   bottom: -27px;
   right: 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 25px;
 }
 .palette-bloc__largeur {
@@ -1155,6 +1167,7 @@ input[type=radio]:checked + .fas {
   font-size: 2.4rem;
   position: relative;
   top: 52px;
+  left: 48px;
   animation: arrow 0.1s linear;
 }
 
@@ -1287,6 +1300,8 @@ input[type=radio]:checked + .fas {
   overflow: hidden;
   position: relative;
   top: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
   font-size: 32px;
 }
 .delice-bloc__espaceSousTitre {
@@ -1297,6 +1312,8 @@ input[type=radio]:checked + .fas {
   position: relative;
   bottom: -27px;
   right: 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 25px;
 }
 .delice-bloc__largeur {

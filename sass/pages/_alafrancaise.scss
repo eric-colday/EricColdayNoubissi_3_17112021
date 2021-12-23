@@ -125,6 +125,8 @@
         overflow: hidden;
         position: relative;
         top: 21px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
         font-size: 32px;
     }
     &__espaceSousTitre{
@@ -135,6 +137,8 @@
         position: relative;
         bottom: -27px;
         right: 1px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
         font-size: 25px;
     }
     &__largeur{
