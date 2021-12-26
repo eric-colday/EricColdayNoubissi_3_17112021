@@ -5,7 +5,7 @@
     background-color: #fafafa;
     @include mobile{
         width: 681px;
-    }
+    } 
     &__marge{
         width: 90%;
         margin: auto; 
@@ -89,7 +89,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
+        } 
     }
      /* MENUS PALETTE */
      &__marge{
@@ -180,9 +180,9 @@ input[type=radio]:checked + .fas {
   animation: check 0.5s ease-in reverse both;
 }
 
-.fa-check-circle:before {
+.fa-check-circle::before {
   font-size: 2.4rem;
   position: relative;
   top: 52px;
-  animation: arrow 0.1s linear;
+  animation: arrow 0.5s linear;
 }

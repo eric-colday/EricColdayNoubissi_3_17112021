@@ -58,14 +58,6 @@
     }
 }
 
-/* @keyframes animation {
-    0% {
-        transform: translateX(-9999px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-} */
 
 /* animation rotate circle */
 @keyframes arrow {
@@ -90,13 +82,6 @@
 
 
 /* Responsive */
-@mixin desktop {
-    @media screen and (max-width: 1800px) {
-        @content;
-    }
-}
-
-
 @mixin tablet {
     @media screen and (max-width: 768px) {
         @content;

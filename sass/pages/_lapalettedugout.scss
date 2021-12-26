@@ -4,7 +4,7 @@
     background-color: #fafafa;
     @include mobile{
         width: 681px;
-    }
+    } 
     &__marge{
         width: 90%;
         margin: auto;
@@ -73,14 +73,6 @@
         padding-top: 50px;
     }
 }
-/*.palette__icon-2 {
-    font-size: 40px;
-    color: #686868;
-    position: relative;
-    left:50%;
-    bottom: 40px;
-    transition: transform 4000ms;
-} */
 
 .palette-bloc{
     &__flexbox{
@@ -95,7 +87,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
+        } 
     }
     /* MENUS PALETTE */
     &__marge{
@@ -198,12 +190,12 @@ input[type=radio]:checked + .fas {
   animation: check 0.5s ease-in reverse both;
 }
 
-.fa-check-circle:before {
+.fa-check-circle::before {  
   font-size: 2.4rem;
   position: relative;
   top: 52px;
   left: 48px;
-  animation: arrow 0.1s linear;
+  animation: arrow 1s linear;
 }
 
 

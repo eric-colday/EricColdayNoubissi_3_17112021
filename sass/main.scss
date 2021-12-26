@@ -1,3 +1,4 @@
+@import "./utils/variables";
 @import "./base/base";
 @import "./base/typography";
 @import "./utils/mixins";
@@ -6,9 +7,8 @@
 @import "./layout/footer";
 @import "./layout/header";
 @import "./layout/nav";
-@import "./utils/variables";
-@import "./pages/alafrancaise";
 @import "./pages/index";
-@import "./pages/lanoteenchantee";
 @import "./pages/lapalettedugout";
+@import "./pages/lanoteenchantee";
+@import "./pages/alafrancaise";
 @import "./pages/ledelicedessens";

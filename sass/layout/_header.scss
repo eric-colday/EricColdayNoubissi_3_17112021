@@ -1,6 +1,6 @@
 // HEADER
 
-.header {
+.header {  
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -9,7 +9,7 @@
     width: 95%;
     height: 9rem;
     margin: auto;
-    @include mobile {
+     @include mobile {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -18,7 +18,7 @@
         margin-bottom: 22px;
         width: 681px;
         height: unset;
-    }
+    } 
     &__flexbox{
         display: flex;
         align-items: center;
