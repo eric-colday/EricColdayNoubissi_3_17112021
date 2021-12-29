@@ -17,14 +17,14 @@
 <body>
 
     <!-- HEADER -->
-    <header class="header">   
+    <header class="header">      
         <div class="header__flexbox">
             <a href="index.html" class="header__icon">
                 <i class="fas fa-arrow-left"></i>
             </a>
-            <img src="./public/img/ohmyfood.png" 
-                 alt="Logo de Oh my food"
-                 class="header__logo">
+            <div class="header__logo"> 
+                <h1>ohmyfood</h1>
+            </div>
         </div> 
     </header>
 
@@ -40,7 +40,7 @@
                         <h1>La palette du goût</h1>
 
                 <!-- ENTRÉES -->  
-                        <h4 class="palette__description">ENTRÉES</h4>
+                        <h2 class="palette__description">ENTRÉES</h2>
                         <hr class="palette__largeur">
                     </div>
                     <div class="palette__icon">
@@ -118,7 +118,7 @@
                 <!-- PLATS -->
                 <div class="palette__info"> 
                     <div>
-                        <h4 class="palette__description">PLATS</h4>
+                        <h2 class="palette__description">PLATS</h2>
                         <hr class="palette-bloc__largeur">
                     </div>
                 </div>
@@ -191,7 +191,7 @@
                 <!-- DESSERTS -->
                 <div class="palette__info"> 
                     <div>
-                        <h4 class="palette__description">DESSERTS</h4>
+                        <h2 class="palette__description">DESSERTS</h2>
                         <hr class="palette-bloc__largeur">
                     </div>
                 </div>
@@ -263,8 +263,7 @@
 
                 <!-- BOUTON COMMANDER -->
                 <div class="palette__btn">
-                    <button class="btn"
-                            onclick="window.location.href = 'lapalettedugout.html';"> 
+                    <button class="btn"> 
                         Commander
                     </button>
                 </div>

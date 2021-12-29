@@ -245,11 +245,7 @@ hr {
   }
 }
 .header__logo {
-  width: 300px;
-}
-
-.animation {
-  animation: cat 1000ms 1150ms;
+  font-size: 20px;
 }
 
 .nav__icon-Map {
@@ -614,8 +610,10 @@ hr {
 }
 .palette__description {
   margin-top: 40px;
-  font-size: 25px;
   margin-bottom: 8px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #686868;
 }
 .palette__largeur {
   width: 22%;
@@ -817,8 +815,10 @@ input[type=radio]:checked + .fas {
 }
 .note__description {
   margin-top: 40px;
-  font-size: 25px;
   margin-bottom: 8px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #686868;
 }
 .note__largeur {
   width: 22%;
@@ -1010,8 +1010,10 @@ input[type=radio]:checked + .fas {
 }
 .alafrancaise__description {
   margin-top: 40px;
-  font-size: 25px;
   margin-bottom: 8px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #686868;
 }
 .alafrancaise__largeur {
   width: 22%;
@@ -1200,8 +1202,10 @@ input[type=radio]:checked + .fas {
 }
 .delice__description {
   margin-top: 40px;
-  font-size: 25px;
   margin-bottom: 8px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #686868;
 }
 .delice__largeur {
   width: 22%;

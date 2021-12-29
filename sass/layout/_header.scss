@@ -7,7 +7,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 95%;
-    height: 9rem;
+    height: 9rem;   
     margin: auto;
      @include mobile {
         display: flex;
@@ -33,14 +33,7 @@
         }
     }
     &__logo {
-        width: 300px;
+        font-size: 20px;
     }
-}
+}   
 
-$prog-bar-dur: 1000ms;
-$prog-bar-delay: 150ms;
-$cat-delay: $prog-bar-dur + $prog-bar-delay;
-
-.animation {
-    animation: cat 1000ms $cat-delay;
-}

@@ -17,14 +17,14 @@
 <body> 
 
      <!-- HEADER -->
-    <header class="header">
+    <header class="header"> 
         <div class="header__flexbox">
             <a href="index.html" class="header__icon">
                 <i class="fas fa-arrow-left"></i>
             </a>
-            <img src="./public/img/ohmyfood.png" 
-                 alt="Logo de Oh my food"
-                 class="header__logo">
+            <div class="header__logo"> 
+                <h1>ohmyfood</h1>
+            </div>
         </div> 
     </header>
 
@@ -40,7 +40,7 @@
                         <h1>La note enchantée</h1>
 
                 <!-- ENTRÉES -->
-                        <h4 class="note__description">ENTRÉES</h4>
+                        <h2 class="note__description">ENTRÉES</h2>
                         <hr class="note__largeur">
                     </div>
                     <div class="note__icon">
@@ -118,7 +118,7 @@
                 <!-- PLATS -->
                 <div class="note__info"> 
                     <div>
-                        <h4 class="note__description">PLATS</h4>
+                        <h2 class="note__description">PLATS</h2>
                         <hr class="note-bloc2__largeur">
                     </div>
                 </div>
@@ -191,7 +191,7 @@
                 <!-- DESSERTS -->
                 <div class="note__info"> 
                     <div>
-                        <h4 class="note__description">DESSERTS</h4>
+                        <h2 class="note__description">DESSERTS</h2>
                         <hr class="note-bloc3__largeur">
                     </div>
                 </div>
@@ -254,7 +254,7 @@
                                 <input type="radio" 
                                 name="Dessert" 
                                 id="Dessert-Three" 
-                                class="Check__checked">
+                                class="Check__checked"> 
                                 <span class="fas fa-check-circle"></span>
                             </label>
                         </div>
@@ -263,8 +263,7 @@
 
                 <!-- BOUTON COMMANDER -->
                 <div class="note__btn">
-                    <button class="btn"
-                            onclick="window.location.href = 'lapalettedugout.html';"> 
+                    <button class="btn"> 
                         Commander
                     </button>
                 </div>

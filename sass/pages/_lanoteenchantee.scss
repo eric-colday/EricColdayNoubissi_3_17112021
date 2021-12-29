@@ -40,8 +40,10 @@
     }
     &__description{
         margin-top: 40px;
-        font-size: 25px;
         margin-bottom: 8px;
+        font-size: 25px;
+        font-weight: 300;
+        color: #686868;
     }
     &__largeur{
         width: 22%;
@@ -184,5 +186,5 @@ input[type=radio]:checked + .fas {
     font-size: 2.4rem;
     position: relative;
     top: 52px;
-    animation: arrow 0.5s linear;
+    animation: arrow 0.5s linear; 
 }  
