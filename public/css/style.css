@@ -105,23 +105,13 @@ hr {
     opacity: 0;
   }
 }
-/* animation rotate circle */
-@keyframes arrow {
-  from {
-    transform: rotate(0turn);
-  }
-  to {
-    transform: rotate(-1turn);
-  }
-}
 /* animation for checks */
-@keyframes check {
+@keyframes quarterspin {
   0% {
-    color: white;
-    width: 150px;
+    transform: rotate(-270deg);
   }
   100% {
-    width: 80px;
+    transform: rotate(0);
   }
 }
 /* Responsive */
@@ -674,43 +664,17 @@ hr {
   border: 0px solid black;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 0px 5px 20px 4px #d5d5d5;
+  overflow: hidden;
+  animation: appear 1s;
 }
-.palette-bloc__Choice {
-  display: flex;
-  align-items: center;
+.palette-bloc__btn:hover {
   cursor: pointer;
 }
-.palette-bloc__Title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 490px;
-  height: 176px;
+.palette-bloc__btn:hover .palette-bloc__check i {
+  animation: quarterspin 0.5s ease-in-out;
 }
-.palette-bloc__hauteurTitre {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  position: relative;
-  top: 21px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 32px;
-}
-.palette-bloc__espaceSousTitre {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #686868;
-  position: relative;
-  bottom: -27px;
-  right: 1px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 25px;
+.palette-bloc__btn:hover .palette-bloc__check {
+  margin-right: 0;
 }
 .palette-bloc__largeur {
   width: 82%;
@@ -733,41 +697,74 @@ hr {
 .palette-bloc__largeur7 {
   width: 85%;
 }
+.palette-bloc__btn i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 32px;
+  width: 32px;
+  font-size: 20px;
+  border-radius: 16px;
+  color: #99E2D0;
+}
+.palette-bloc__item {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0 16px 16px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  gap: 10px;
+}
+.palette-bloc__description {
+  padding: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 490px;
+  height: 176px;
+}
+.palette-bloc__hauteurTitre {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: relative;
+  top: 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+.palette-bloc__espaceSousTitre {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #686868;
+  position: relative;
+  bottom: -19px;
+  right: 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+}
 .palette-bloc__Price {
   font-size: 25px;
   position: relative;
-  right: 12px;
-  bottom: 3px;
+  right: 36px;
+  bottom: 2px;
   padding-left: 3rem;
 }
-
-input[type=radio] {
-  display: none;
-}
-
-label .fas {
-  border-radius: 0px 15px 15px 0px;
-  height: 78px;
-  color: transparent;
-}
-
-input[type=radio]:checked + .fas {
-  position: relative;
-  bottom: 28px;
-  width: 84px;
-  height: 120px;
-  border-radius: 0px 30px 30px 0px;
-  background-color: #99e2d0;
-  transition-duration: 0.01s;
-  animation: check 0.5s ease-in reverse both;
-}
-
-.fa-check-circle::before {
-  font-size: 2.4rem;
-  position: relative;
-  top: 52px;
-  left: 48px;
-  animation: arrow 1s linear;
+.palette-bloc__check {
+  background-color: #99E2D0;
+  margin-right: -112px;
+  margin-bottom: 6rem;
+  width: 111px;
+  height: 12rem;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  transition: margin-right 0.5s;
 }
 
 .note {
@@ -879,46 +876,20 @@ input[type=radio]:checked + .fas {
   border: 0px solid black;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 0px 5px 20px 4px #d5d5d5;
+  overflow: hidden;
+  animation: appear 1s;
 }
-.note-bloc__Choice {
-  display: flex;
-  align-items: center;
+.note-bloc__btn:hover {
   cursor: pointer;
 }
-.note-bloc__Title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 490px;
-  height: 176px;
+.note-bloc__btn:hover .note-bloc__check i {
+  animation: quarterspin 0.5s ease-in-out;
 }
-.note-bloc__hauteurTitre {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  position: relative;
-  top: 21px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 32px;
-}
-.note-bloc__espaceSousTitre {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #686868;
-  position: relative;
-  bottom: -27px;
-  right: 1px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 25px;
+.note-bloc__btn:hover .note-bloc__check {
+  margin-right: 0;
 }
 .note-bloc__largeur {
-  width: 88%;
+  width: 95%;
 }
 .note-bloc__largeur2 {
   width: 89%;
@@ -929,40 +900,74 @@ input[type=radio]:checked + .fas {
 .note-bloc__largeur4 {
   width: 94%;
 }
+.note-bloc__btn i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 32px;
+  width: 32px;
+  font-size: 20px;
+  border-radius: 16px;
+  color: #99E2D0;
+}
+.note-bloc__item {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0 16px 16px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  gap: 10px;
+}
+.note-bloc__description {
+  padding: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 490px;
+  height: 176px;
+}
+.note-bloc__hauteurTitre {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: relative;
+  top: 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+.note-bloc__espaceSousTitre {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #686868;
+  position: relative;
+  bottom: -19px;
+  right: 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+}
 .note-bloc__Price {
   font-size: 25px;
   position: relative;
-  right: 12px;
-  bottom: 3px;
+  right: 36px;
+  bottom: 2px;
   padding-left: 3rem;
 }
-
-input[type=radio] {
-  display: none;
-}
-
-label .fas {
-  border-radius: 0px 15px 15px 0px;
-  height: 78px;
-  color: transparent;
-}
-
-input[type=radio]:checked + .fas {
-  position: relative;
-  bottom: 28px;
-  width: 84px;
-  height: 120px;
-  border-radius: 0px 30px 30px 0px;
-  background-color: #99e2d0;
-  transition-duration: 0.01s;
-  animation: check 0.5s ease-in reverse both;
-}
-
-.fa-check-circle::before {
-  font-size: 2.4rem;
-  position: relative;
-  top: 52px;
-  animation: arrow 0.5s linear;
+.note-bloc__check {
+  background-color: #99E2D0;
+  margin-right: -112px;
+  margin-bottom: 6rem;
+  width: 111px;
+  height: 12rem;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  transition: margin-right 0.5s;
 }
 
 .alafrancaise {
@@ -1046,6 +1051,68 @@ input[type=radio]:checked + .fas {
 
 .alafrancaise-bloc {
   /* MENUS PALETTE */
+  /*&__btn{
+      width: 600px;
+      height: 120px;
+      padding-left: 20px;
+      background-color: #fafafa;
+      border: 0px solid black;
+      border-radius: 30px 30px 30px 30px;
+      box-shadow: 0px 5px 20px 4px #d5d5d5;
+  }
+  &__Choice{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+  }
+  &__Title{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 490px;
+      height: 176px;
+  }
+  &__hauteurTitre{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      position: relative;
+      top: 21px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-size: 32px;
+  }
+  &__espaceSousTitre{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      color: #686868;
+      position: relative;
+      bottom: -27px;
+      right: 1px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 25px;
+  }
+  &__largeur{
+      width: 82%;
+  }
+  &__largeur2{
+      width: 86%;
+  }
+  &__largeur3{
+      width: 83%;
+  }
+  &__Price {
+      font-size: 25px;
+      position: relative;
+      right: 12px;
+      bottom: 3px;
+      padding-left: 3rem;
+  }*/
 }
 .alafrancaise-bloc__flexbox {
   display: flex;
@@ -1074,43 +1141,17 @@ input[type=radio]:checked + .fas {
   border: 0px solid black;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 0px 5px 20px 4px #d5d5d5;
+  overflow: hidden;
+  animation: appear 1s;
 }
-.alafrancaise-bloc__Choice {
-  display: flex;
-  align-items: center;
+.alafrancaise-bloc__btn:hover {
   cursor: pointer;
 }
-.alafrancaise-bloc__Title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 490px;
-  height: 176px;
+.alafrancaise-bloc__btn:hover .alafrancaise-bloc__check i {
+  animation: quarterspin 0.5s ease-in-out;
 }
-.alafrancaise-bloc__hauteurTitre {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  position: relative;
-  top: 21px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 32px;
-}
-.alafrancaise-bloc__espaceSousTitre {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #686868;
-  position: relative;
-  bottom: -27px;
-  right: 1px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 25px;
+.alafrancaise-bloc__btn:hover .alafrancaise-bloc__check {
+  margin-right: 0;
 }
 .alafrancaise-bloc__largeur {
   width: 82%;
@@ -1121,40 +1162,74 @@ input[type=radio]:checked + .fas {
 .alafrancaise-bloc__largeur3 {
   width: 83%;
 }
+.alafrancaise-bloc__btn i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 32px;
+  width: 32px;
+  font-size: 20px;
+  border-radius: 16px;
+  color: #99E2D0;
+}
+.alafrancaise-bloc__item {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0 16px 16px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  gap: 10px;
+}
+.alafrancaise-bloc__description {
+  padding: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 490px;
+  height: 176px;
+}
+.alafrancaise-bloc__hauteurTitre {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: relative;
+  top: 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+.alafrancaise-bloc__espaceSousTitre {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #686868;
+  position: relative;
+  bottom: -19px;
+  right: 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+}
 .alafrancaise-bloc__Price {
   font-size: 25px;
   position: relative;
-  right: 12px;
-  bottom: 3px;
+  right: 36px;
+  bottom: 2px;
   padding-left: 3rem;
 }
-
-input[type=radio] {
-  display: none;
-}
-
-label .fas {
-  border-radius: 0px 15px 15px 0px;
-  height: 78px;
-  color: transparent;
-}
-
-input[type=radio]:checked + .fas {
-  position: relative;
-  bottom: 28px;
-  width: 84px;
-  height: 120px;
-  border-radius: 0px 30px 30px 0px;
-  background-color: #99e2d0;
-  transition-duration: 0.01s;
-  animation: check 0.5s ease-in reverse both;
-}
-
-.fa-check-circle::before {
-  font-size: 2.4rem;
-  position: relative;
-  top: 52px;
-  animation: arrow 0.5s linear;
+.alafrancaise-bloc__check {
+  background-color: #99E2D0;
+  margin-right: -112px;
+  margin-bottom: 6rem;
+  width: 111px;
+  height: 12rem;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  transition: margin-right 0.5s;
 }
 
 .delice {
@@ -1238,6 +1313,65 @@ input[type=radio]:checked + .fas {
 
 .delice-bloc {
   /* MENUS PALETTE */
+  /*&__btn{
+      width: 600px;
+      height: 120px;
+      padding-left: 20px;
+      background-color: #fafafa;
+      border: 0px solid black;
+      border-radius: 30px 30px 30px 30px;
+      box-shadow: 0px 5px 20px 4px #d5d5d5;
+  }
+  &__Choice{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+  }
+  &__Title{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 490px;
+      height: 176px;
+  }
+  &__hauteurTitre{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      position: relative;
+      top: 21px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-size: 32px;
+  }
+  &__espaceSousTitre{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      color: #686868;
+      position: relative;
+      bottom: -27px;
+      right: 1px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300; 
+      font-size: 25px;
+  }
+  &__largeur{
+      width: 95%;
+  }
+  &__largeur2{
+      width: 100%;
+  }
+  &__Price {
+      font-size: 25px;
+      position: relative;
+      right: 12px;
+      bottom: 3px;
+      padding-left: 3rem;
+  }*/
 }
 .delice-bloc__flexbox {
   display: flex;
@@ -1266,19 +1400,50 @@ input[type=radio]:checked + .fas {
   border: 0px solid black;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 0px 5px 20px 4px #d5d5d5;
+  overflow: hidden;
+  animation: appear 1s;
 }
-.delice-bloc__Choice {
-  display: flex;
-  align-items: center;
+.delice-bloc__btn:hover {
   cursor: pointer;
 }
-.delice-bloc__Title {
+.delice-bloc__btn:hover .delice-bloc__check i {
+  animation: quarterspin 0.5s ease-in-out;
+}
+.delice-bloc__btn:hover .delice-bloc__check {
+  margin-right: 0;
+}
+.delice-bloc__largeur {
+  width: 95%;
+}
+.delice-bloc__largeur2 {
+  width: 100%;
+}
+.delice-bloc__btn i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 32px;
+  width: 32px;
+  font-size: 20px;
+  border-radius: 16px;
+  color: #99E2D0;
+}
+.delice-bloc__item {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0 16px 16px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  gap: 10px;
+}
+.delice-bloc__description {
+  padding: 16px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   width: 490px;
   height: 176px;
 }
@@ -1287,7 +1452,7 @@ input[type=radio]:checked + .fas {
   text-overflow: ellipsis;
   overflow: hidden;
   position: relative;
-  top: 21px;
+  top: 2px;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 32px;
@@ -1298,52 +1463,29 @@ input[type=radio]:checked + .fas {
   overflow: hidden;
   color: #686868;
   position: relative;
-  bottom: -27px;
+  bottom: -19px;
   right: 1px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 25px;
 }
-.delice-bloc__largeur {
-  width: 95%;
-}
-.delice-bloc__largeur2 {
-  width: 100%;
-}
 .delice-bloc__Price {
   font-size: 25px;
   position: relative;
-  right: 12px;
-  bottom: 3px;
+  right: 36px;
+  bottom: 2px;
   padding-left: 3rem;
 }
-
-input[type=radio] {
-  display: none;
-}
-
-label .fas {
-  border-radius: 0px 15px 15px 0px;
-  height: 78px;
-  color: transparent;
-}
-
-input[type=radio]:checked + .fas {
-  position: relative;
-  bottom: 28px;
-  width: 84px;
-  height: 120px;
-  border-radius: 0px 30px 30px 0px;
-  background-color: #99e2d0;
-  transition-duration: 0.01s;
-  animation: check 0.5s ease-in reverse both;
-}
-
-.fa-check-circle::before {
-  font-size: 2.4rem;
-  position: relative;
-  top: 52px;
-  animation: arrow 0.5s linear;
+.delice-bloc__check {
+  background-color: #99E2D0;
+  margin-right: -112px;
+  margin-bottom: 6rem;
+  width: 111px;
+  height: 12rem;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  transition: margin-right 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

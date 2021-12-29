@@ -104,6 +104,105 @@
         background-color: #fafafa;
         border: 0px solid black;
         border-radius: 30px 30px 30px 30px;
+        box-shadow: 0px 5px 20px 4px #d5d5d5; 
+        overflow: hidden;
+        animation: appear 1s;
+        &:hover {
+            cursor: pointer;
+        }
+        &:hover .alafrancaise-bloc__check i {
+            animation: quarterspin 0.5s ease-in-out;
+        }
+        &:hover .alafrancaise-bloc__check {
+            margin-right: 0;
+        }
+    }
+    &__largeur{
+        width: 82%;
+    }
+    &__largeur2{
+        width: 86%;
+    }
+    &__largeur3{
+        width: 83%;
+    }
+    &__btn i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        height: 32px;
+        width: 32px;
+        font-size: 20px;
+        border-radius: 16px;
+        color: #99E2D0;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 0 16px 16px 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        gap: 10px;
+    }
+    &__description{
+        padding: 16px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 490px;
+        height: 176px;
+    }
+    &__hauteurTitre{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+        top: 2px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600; 
+        font-size: 32px;
+    }
+    &__espaceSousTitre{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #686868;
+        position: relative;
+        bottom: -19px;
+        right: 1px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+    }
+    &__Price{
+        font-size: 25px;
+        position: relative;
+        right: 36px;
+        bottom: 2px;
+        padding-left: 3rem;
+    }
+    &__check{
+        background-color: #99E2D0;
+        margin-right: -112px;
+        margin-bottom: 6rem;
+        width: 111px;
+        height: 12rem;
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+        transition: margin-right 0.5s;
+    }
+
+    /*&__btn{
+        width: 600px;
+        height: 120px;
+        padding-left: 20px;
+        background-color: #fafafa;
+        border: 0px solid black;
+        border-radius: 30px 30px 30px 30px;
         box-shadow: 0px 5px 20px 4px #d5d5d5;
     }
     &__Choice{
@@ -158,33 +257,6 @@
         right: 12px;
         bottom: 3px;
         padding-left: 3rem;
-    }
+    }*/
 }
 
-input[type=radio] {
-  display: none;
-}
-
-label .fas {
-  border-radius: 0px 15px 15px 0px;
-  height: 78px;
-  color: transparent;
-}
-
-input[type=radio]:checked + .fas {
-  position: relative;
-  bottom: 28px;
-  width: 84px;
-  height: 120px;
-  border-radius: 0px 30px 30px 0px;
-  background-color: #99e2d0;
-  transition-duration: 0.01s;
-  animation: check 0.5s ease-in reverse both;
-}
-
-.fa-check-circle::before {
-  font-size: 2.4rem;
-  position: relative;
-  top: 52px;
-  animation: arrow 0.5s linear;
-}
