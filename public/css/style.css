@@ -114,6 +114,7 @@ hr {
     transform: rotate(0);
   }
 }
+/* Responsive Mobile First */
 /* Responsive */
 .btn {
   padding: 26px 48px 26px 48px;
@@ -122,7 +123,7 @@ hr {
   border: 0px solid #9356DC;
   margin-top: 60px;
   color: white;
-  font-size: 26px;
+  font-size: 16px;
   border-radius: 45px;
   box-shadow: 0px 5px 10px 7px #d5d5d5;
   transform: scale(1);
@@ -135,26 +136,23 @@ hr {
   background: #FF79DA;
   box-shadow: 0px 8px 14px 9px #d5d5d5;
 }
+@media screen and (min-width: 514px) {
+  .btn {
+    font-size: 26px;
+  }
+}
 
 .container {
   width: 100%;
   margin: auto;
 }
-@media screen and (max-width: 681px) {
-  .container {
-    width: 681px;
-    margin-top: -23px;
-  }
-}
 
+/** FOOTER */
 .footer {
+  width: 100%;
+  margin: auto;
   height: 37rem;
   background-color: #323232;
-}
-@media screen and (max-width: 681px) {
-  .footer {
-    width: 681px;
-  }
 }
 .footer__margeMenus {
   margin-top: 10rem;
@@ -198,25 +196,18 @@ hr {
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  width: 95%;
+  width: 100%;
   height: 9rem;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
-@media screen and (max-width: 681px) {
+@media screen and (min-width: 514px) {
   .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 22px;
-    width: 681px;
-    height: unset;
+    width: 95%;
+    justify-content: space-between;
   }
 }
 .header__flexbox {
@@ -240,55 +231,105 @@ hr {
 
 .nav__icon-Map {
   position: relative;
-  left: 18rem;
-  top: 1px;
-  margin-right: 20px;
-  font-size: 18px;
+  right: -5rem;
+  top: -2px;
+  font-size: 19px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 514px) {
   .nav__icon-Map {
-    left: 7rem;
+    right: 7rem;
+    top: 16px;
+    font-size: 13px;
   }
 }
-@media screen and (max-width: 681px) {
-  .nav__icon-Map {
-    position: relative;
-    left: 18rem;
-    top: 6rem;
-    margin-right: 20px;
-    font-size: 32px;
-  }
-}
-.nav__texte {
-  width: 30rem;
-  height: 3rem;
+.nav__box {
+  width: 100%;
+  height: 6rem;
   border: none;
   background: #F2F2F2;
   box-shadow: inset 0px 7px 6px #d5d5d5;
   text-align: center;
-  margin-left: 90px;
-  font-size: 20px;
-  border-radius: 5px;
-  font-weight: 500;
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@media screen and (max-width: 768px) {
-  .nav__texte {
-    margin-left: -19px;
-  }
-}
-@media screen and (max-width: 681px) {
-  .nav__texte {
-    width: 70rem;
-    height: 88px;
+@media screen and (min-width: 514px) {
+  .nav__box {
+    width: 19rem;
+    height: 3rem;
     border: none;
     background: #F2F2F2;
     box-shadow: inset 0px 7px 6px #d5d5d5;
     text-align: center;
-    font-size: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.nav__texte {
+  font-size: 23px;
+  font-weight: 500;
+  padding-left: 25px;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+}
+@media screen and (min-width: 514px) {
+  .nav__texte {
+    font-size: 15px;
     font-weight: 500;
+    padding-bottom: 15px;
   }
 }
 
+/*.nav{
+    &__icon-Map{
+        position: relative;
+        left: 18rem;
+        top: 1px;
+        margin-right: 20px;
+        font-size: 18px;
+        @include tablet {
+            left: 7rem;
+        }
+        @include mobile{
+            position: relative;
+            left: 18rem;
+            top: 6rem;
+            margin-right: 20px;
+            font-size: 32px;
+        } 
+    }
+    &__texte{
+        width: 30rem;
+        height: 3rem;
+        border: none;
+        background: #F2F2F2;
+        box-shadow: inset 0px 7px 6px #d5d5d5;
+        text-align: center;
+        margin-left: 90px;
+        font-size: 20px;
+        border-radius: 5px;
+        font-weight: 500;  
+
+        @include tablet {
+            margin-left: -19px;
+        }
+
+        @include mobile{
+            width: 70rem;
+            height: 88px;
+            border: none;
+            background: #F2F2F2;
+            box-shadow: inset 0px 7px 6px #d5d5d5;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500;
+        } 
+    }
+}*/
 /* Loading spinner */
 .loader {
   position: fixed;
@@ -316,17 +357,20 @@ hr {
   animation: spin 3s;
 }
 
+/* ACCUEIL SLIDER */
 .accueil {
-  height: 510px;
+  height: 688px;
+  margin-top: -1rem;
   background-color: #fafafa;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  /* RESTAURANTS */
 }
 .accueil__titre {
-  margin-top: -50px;
+  margin-top: 50px;
 }
 .accueil__soustitre {
   margin-top: 20px;
@@ -334,7 +378,6 @@ hr {
 .accueil-menu {
   width: 90%;
   margin: auto;
-  margin-bottom: 110px;
 }
 .accueil-menu__titre {
   margin-top: 90px;
@@ -342,23 +385,23 @@ hr {
 }
 .accueil-menu__flexbox {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
 }
-@media screen and (max-width: 681px) {
+@media screen and (min-width: 514px) {
   .accueil-menu__flexbox {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .accueil-menu__marge {
   margin-bottom: 10px;
 }
 .accueil-menu__un {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #9356DC;
   background-color: #9356DC;
   border-radius: 25px 25px 25px 25px;
@@ -369,67 +412,97 @@ hr {
   font-size: 25px;
   position: relative;
   left: -4%;
-  bottom: -82px;
+  bottom: -50px;
+}
+@media screen and (min-width: 514px) {
+  .accueil-menu__un {
+    width: 40px;
+    height: 40px;
+    bottom: -82px;
+  }
 }
 .accueil-menu__btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 26px;
-  width: 520px;
-  height: 120px;
+  font-size: 18px;
+  width: 293px;
+  height: 70px;
   background-color: #fafafa;
   border: 0px solid black;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 5px 20px 4px #d5d5d5;
 }
 .accueil-menu__btn:hover {
   cursor: pointer;
   background: #f1e3ff;
 }
+@media screen and (min-width: 514px) {
+  .accueil-menu__btn {
+    font-size: 26px;
+    width: 520px;
+    height: 120px;
+    border-radius: 30px 30px 30px 30px;
+  }
+}
 .accueil-menu__icon {
   position: relative;
-  left: -46px;
+  left: -12px;
+}
+@media screen and (min-width: 514px) {
+  .accueil-menu__icon {
+    left: -46px;
+  }
 }
 .accueil-menu__icon-couleur {
   color: #7c7c7c;
-  font-size: 36px;
+  font-size: 18px;
 }
 .accueil-menu__icon-couleur:hover {
   color: #9356DC;
 }
-.accueil-proj {
-  width: 100%;
-  height: 86rem;
-  background-color: #fafafa;
+@media screen and (min-width: 514px) {
+  .accueil-menu__icon-couleur {
+    font-size: 36px;
+  }
 }
-@media screen and (max-width: 681px) {
+.accueil-proj {
+  width: 90%;
+  height: 161rem;
+  margin: auto;
+  /* 4 CARDS RESTAURANTS */
+}
+@media screen and (min-width: 741px) {
   .accueil-proj {
-    height: 218rem;
+    height: 90rem;
+  }
+}
+@media screen and (min-width: 1482px) {
+  .accueil-proj {
+    height: 55rem;
   }
 }
 .accueil-proj__marge {
   width: 90%;
-  margin: auto;
 }
 .accueil-proj__titre {
   padding-top: 79px;
 }
 .accueil-proj__flexbox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media screen and (max-width: 681px) {
+@media screen and (min-width: 514px) {
   .accueil-proj__flexbox {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .accueil-proj__card {
-  width: 300px;
+  width: 290px;
   height: 300px;
   margin-top: 40px;
   border: 0px solid black;
@@ -444,75 +517,74 @@ hr {
   transform: scale(1.1);
   box-shadow: 0px 8px 14px 9px #d5d5d5;
 }
-@media screen and (max-width: 681px) {
+@media screen and (min-width: 514px) {
   .accueil-proj__card {
-    width: 606px;
-    height: 443px;
+    width: 300px;
   }
 }
 .accueil-proj__img {
   width: 100%;
-  height: 190px;
+  height: 200px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
-@media screen and (max-width: 681px) {
+@media screen and (min-width: 514px) {
   .accueil-proj__img {
-    height: 304px;
+    height: 190px;
   }
 }
 .accueil-proj__nouveau {
   border: 0px solid black;
   border-radius: 4px;
-  width: 100px;
+  width: 134px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #99E2D0;
   position: relative;
-  bottom: 59%;
-  left: 60%;
+  bottom: 63%;
+  left: 48%;
   font-size: 26px;
   color: #309d82;
   font-weight: 500;
 }
-@media screen and (max-width: 681px) {
+@media screen and (min-width: 514px) {
   .accueil-proj__nouveau {
-    width: 134px;
+    width: 100px;
     height: 50px;
-    bottom: 63%;
-    left: 75%;
+    bottom: 59%;
+    left: 60%;
   }
 }
 .accueil-proj__fontSizeP {
-  font-size: 20px;
+  font-size: 28px;
 }
-@media screen and (max-width: 681px) {
+@media screen and (min-width: 514px) {
   .accueil-proj__fontSizeP {
-    font-size: 28px;
+    font-size: 20px;
   }
 }
 .accueil-proj__info {
   display: flex;
   align-items: center;
   margin-left: 26px;
-  margin-top: -24px;
+  margin-top: -34px;
+}
+@media screen and (min-width: 514px) {
+  .accueil-proj__info {
+    margin-top: -24px;
+  }
 }
 .accueil-proj__fontSizeH3 {
   font-size: 22px;
 }
-@media screen and (max-width: 681px) {
-  .accueil-proj__fontSizeH3 {
-    font-size: 31px;
-  }
-}
 .accueil-proj__fontSizeH4 {
-  font-size: 20px;
+  font-size: 21px;
 }
-@media screen and (max-width: 681px) {
+@media screen and (min-width: 514px) {
   .accueil-proj__fontSizeH4 {
-    font-size: 31px;
+    font-size: 20px;
   }
 }
 .accueil-proj__info2 {
@@ -532,7 +604,7 @@ hr {
   font-size: 24px;
   color: #686868;
   position: relative;
-  left: 19px;
+  left: 7%;
   bottom: 14px;
   cursor: pointer;
 }
@@ -540,10 +612,9 @@ hr {
   color: #FF79DA;
   transform: scale(1.15);
 }
-@media screen and (max-width: 681px) {
+@media screen and (min-width: 514px) {
   .accueil-proj__icon {
-    font-size: 40px;
-    left: 42%;
+    left: 19px;
   }
 }
 .accueil-proj__icon-2 {

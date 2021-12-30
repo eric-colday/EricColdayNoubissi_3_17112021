@@ -3,8 +3,4 @@
 .container{
     width: 100%;
     margin: auto;
-    @include mobile {
-        width: 681px;
-        margin-top: -23px;
-    } 
 }

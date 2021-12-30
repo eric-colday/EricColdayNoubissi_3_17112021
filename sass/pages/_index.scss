@@ -1,6 +1,4 @@
-
 /* Loading spinner */
-
 .loader {
     position: fixed;
     display: flex;
@@ -27,53 +25,45 @@
     }   
 }
 
+/* ACCUEIL SLIDER */
 
-
-
-
-
-// ACCUEIL SLIDER
-
-.accueil{  
-    height: 510px;
+.accueil{
+    height: 688px;
+    margin-top: -1rem;
     background-color: $couleur-gris-clair;
     @include flexbox;
     justify-content: center;
     flex-direction: column;
-    text-align: center;  
+    text-align: center;
     &__titre{
-        margin-top: -50px;
+        margin-top: 50px;
     }
     &__soustitre{
         margin-top: 20px;
     }
-
-    // FONCTIONNEMENT
     &-menu{
         width: 90%;
         margin: auto;
-        margin-bottom: 110px;
         &__titre{
             margin-top: 90px;
             margin-bottom: 11px;
         }
         &__flexbox{
             display: flex;
-            flex-direction: row;
             flex-wrap: wrap;
+            flex-direction: column;
             justify-content: space-between;
-            @include mobile {
+            @include mobile-first {
                 @include flexbox;
-                flex-direction: column;
+                flex-direction: row;
             }  
-            
         }
         &__marge{
             margin-bottom: 10px;
         }
         &__un{ 
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             border: 1px solid $couleur-primaire;
             background-color: $couleur-primaire;
             border-radius:  25px 25px 25px 25px;
@@ -83,66 +73,82 @@
             font-size: 25px;
             position: relative;
             left: -4%;
-            bottom: -82px;
+            bottom: -50px;
+            @include mobile-first{
+                width: 40px;
+                height: 40px;
+                bottom: -82px;
+            }
         }
         &__btn{
             @include flexbox;
             justify-content: center;
-            font-size: 26px;
-            width: 520px;
-            height: 120px;
+            font-size: 18px;
+            width: 293px;
+            height: 70px;
             background-color: $couleur-gris-clair;
             border: 0px solid black;
-            border-radius: 30px 30px 30px 30px;
+            border-radius: 15px 15px 15px 15px;
             box-shadow: 0px 5px 20px 4px $couleur-gris-shadow;
             &:hover{
                 cursor: pointer;
                 background: rgb(241, 227, 255);
             }
+            @include mobile-first{
+                font-size: 26px;
+                width: 520px;
+                height: 120px;
+                border-radius: 30px 30px 30px 30px;
+            }
         }
         &__icon{
             position: relative;
-            left: -46px;
+            left: -12px;
+            @include mobile-first {
+                left: -46px;
+            }
         }
         &__icon-couleur{
             color: #7c7c7c;
-            font-size: 36px;
+            font-size: 18px;
             &:hover{
                 color: $couleur-primaire;
             }
+            @include mobile-first{
+                font-size: 36px;
+            }
         }
     }
-
-    // RESTAURANTS
+    /* RESTAURANTS */
     &-proj{
-        width: 100%;
-        height: 86rem;
-        background-color: $couleur-gris-clair;
-        @include mobile{
-            height: 218rem;
-        } 
+        width: 90%;
+        height: 161rem;
+        margin: auto;
+        @include small-tablet{
+            height: 90rem;
+        }
+        @include destop{
+            height: 55rem;
+        }
         &__marge{
             width: 90%;
-            margin: auto;
         }
         &__titre{
             padding-top: 79px;
         }
         &__flexbox{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
             justify-content: space-between;
-            @include mobile{
+            @include mobile-first{
                 @include flexbox;
-                flex-direction: column;
+                flex-direction: row;
             } 
-            
         }
-
-        // 4 CARDS RESTAURANTS
+        /* 4 CARDS RESTAURANTS */
         &__card{
-            width: 300px;
+            width: 290px;
             height: 300px;
             margin-top: 40px;
             border: 0px solid black;
@@ -152,66 +158,65 @@
             transition-property: transform;
             transition-duration: 1000ms;
             &:hover{
-               cursor: pointer;
-               transform: scale(1.1);
-               box-shadow: 0px 8px 14px 9px $couleur-gris-shadow;
+                cursor: pointer;
+                transform: scale(1.1);
+                box-shadow: 0px 8px 14px 9px $couleur-gris-shadow;
             }
-            @include mobile{
-                width: 606px;
-                height: 443px;
+            @include mobile-first{
+                width: 300px;
             } 
         }
         &__img{
             width: 100%;
-            height: 190px;
+            height: 200px;
             border-radius: 20px 20px 0px 0px;
             object-fit: cover;
-            @include mobile{
-                height: 304px;
+            @include mobile-first{
+                height: 190px;
             } 
         }
         &__nouveau{
             border: 0px solid black;
             border-radius: 4px;
-            width: 100px;
+            width: 134px;
             height: 50px;
             @include flexbox;
             justify-content: center;
             background-color: $couleur-tertiaire;
             position: relative;
-            bottom: 59%;
-            left: 60%;
+            bottom: 63%;
+            left: 48%;
             font-size: 26px;
             color: #309d82;
             font-weight: 500;
-            @include mobile{
-                width: 134px;
+            @include mobile-first{
+                width: 100px;
                 height: 50px;
-                bottom: 63%;
-                left: 75%;
+                bottom: 59%;
+                left: 60%;
             } 
         }
         &__fontSizeP{
-            font-size: 20px;
-            @include mobile{
-                font-size: 28px;
+            font-size: 28px;
+            @include mobile-first{
+                font-size: 20px;
             }  
         }
         &__info{
             @include flexbox;
             margin-left: 26px;
-            margin-top: -24px;
+            margin-top: -34px;  
+            @include mobile-first{
+                margin-top: -24px;
+            } 
         }
         &__fontSizeH3{
             font-size: 22px;
-            @include mobile{
-                font-size: 31px;
-            } 
         }
         &__fontSizeH4{
-            font-size: 20px;
-            @include mobile{
-                font-size: 31px;
+            font-size: 21px;
+            @include mobile-first{
+                font-size: 20px;
             } 
         }
         &__info2{
@@ -230,16 +235,15 @@
             font-size: 24px;
             color: #686868;
             position: relative;
-            left: 19px;
+            left: 7%;
             bottom: 14px;
             cursor: pointer;
             &:hover > .accueil-proj__icon-2{
                 color: $couleur-secondaire;
                 transform: scale(1.15);
             }
-            @include mobile{
-                font-size: 40px;
-                left: 42%;
+            @include mobile-first{
+                left: 19px;
             } 
         }
         &__icon-2{
@@ -251,7 +255,5 @@
             transition: transform 400ms;
         }
     }
-}  
-
-
+}
 

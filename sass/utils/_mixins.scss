@@ -68,8 +68,28 @@
     }
 }
 
+/* Responsive Mobile First */  
 
-/* Responsive */
+@mixin mobile-first {
+    @media screen and (min-width: 514px) {
+        @content;
+    }   
+}
+
+@mixin small-tablet{
+    @media screen and (min-width: 741px) {
+        @content;
+    }   
+}
+
+@mixin destop {
+    @media screen and (min-width: 1482px) {
+        @content;
+    }   
+}
+
+
+/* Responsive */  
 @mixin tablet {
     @media screen and (max-width: 768px) {
         @content;
@@ -81,3 +101,5 @@
         @content;
     }   
 }
+
+
