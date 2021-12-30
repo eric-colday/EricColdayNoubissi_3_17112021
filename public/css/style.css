@@ -60,7 +60,6 @@
   }
 }
 /* Responsive Mobile First */
-/* Responsive */
 /** 2. Base */
 /* Propriété Box-sizing */
 *,
@@ -187,11 +186,6 @@ hr {
   font-size: 30px;
   color: #000;
 }
-@media screen and (max-width: 768px) {
-  .header__icon {
-    right: 1rem;
-  }
-}
 .header__logo {
   font-size: 20px;
 }
@@ -251,8 +245,8 @@ hr {
   }
 }
 
-.input {
-  display: none;
+input[type=search] {
+  color: transparent;
 }
 
 /** FOOTER */
@@ -360,14 +354,14 @@ hr {
 .accueil-menu__flexbox {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media screen and (min-width: 514px) {
   .accueil-menu__flexbox {
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 .accueil-menu__marge {
@@ -464,15 +458,17 @@ hr {
 }
 .accueil-proj__flexbox {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 514px) {
   .accueil-proj__flexbox {
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 .accueil-proj__card {

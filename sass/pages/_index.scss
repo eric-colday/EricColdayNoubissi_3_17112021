@@ -51,11 +51,11 @@
         &__flexbox{
             display: flex;
             flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             @include mobile-first {
                 @include flexbox;
                 flex-direction: row;
+                justify-content: space-between;
             }  
         }
         &__marge{
@@ -138,12 +138,14 @@
         }
         &__flexbox{
             display: flex;
-            flex-direction: column;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             @include mobile-first{
                 @include flexbox;
                 flex-direction: row;
+                justify-content: space-between;
             } 
         }
         /* 4 CARDS RESTAURANTS */

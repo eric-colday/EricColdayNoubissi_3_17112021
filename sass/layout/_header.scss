@@ -21,9 +21,6 @@
         right: 2rem;
         font-size: 30px;
         color: #000;
-        @include tablet {
-            right: 1rem; 
-        }
     }
     &__logo {
         font-size: 20px;
