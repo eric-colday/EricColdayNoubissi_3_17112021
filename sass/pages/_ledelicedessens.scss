@@ -1,17 +1,12 @@
 .delice{ 
-    width: 100%;
-    height: 218rem;
+    height: 160rem;
     background-color: #fafafa;
-     @include mobile{
-        width: 681px;
-    } 
-    &__marge{
-        width: 90%;
-        margin: auto;
+    @include mobile-first{
+        width: 100%;
+        height: 218rem;
     }
-    &__titre{
-        margin-top: 90px;
-        margin-bottom: 11px;
+    @include destop1200{
+        height: 158rem;
     }
     &__flexbox{
         display: flex;
@@ -20,10 +15,16 @@
     }
     &__card{
         width: 100%;
-        height:199rem;
+        height: 142rem;
         margin-top: -44px;
         border-radius: 50px 50px 0 0;
         background: #fafafa;
+        @include mobile-first{
+            height:199rem;
+        }
+        @include destop1200{
+            height: 139rem;
+        }
     }
     &__img{
         width: 100%;
@@ -49,25 +50,36 @@
         width: 22%;
     }
     &__icon{
-        font-size: 40px;
+        font-size: 20px;
         color: #686868;
         position: relative;
-        left: 26%;
-        bottom: 40px;
+        left:1%;
+        bottom: 42px;
         cursor: pointer;
         &:hover > .delice__icon-2{
             color: $couleur-secondaire;
             transform: scale(1.4);
         }
+        @include mobile-first{
+            font-size: 40px;
+            left:22%;
+            bottom: 40px;
+        }
     }
     &__icon-2 {
-        font-size: 40px;
+        font-size: 20px;
+        left: 24px;
+        bottom: 2px;
         color: #686868;
         position: relative;
-        left: 50px;
         transform: scale(0);
         transition: transform 400ms;
+        @include mobile-first{
+            font-size: 40px;
+            left: 50px;
+        }
     }
+    /* Bouton commander */
     &__btn{
         display: flex;
         justify-content: center;
@@ -79,28 +91,27 @@
     &__flexbox{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         margin-bottom: -46px;
         animation: slideDown 5s;
-        @include mobile{
+        @include mobile-first{
+            flex-direction: row;
             display: flex;
-            flex-direction: column;
-            align-items: center;
         } 
     }
-     /* MENUS PALETTE */
-     &__marge{
+    /* MENUS PALETTE */
+    &__marge{
         margin-bottom: 15px;
     }
     &__btn{
-        width: 600px;
-        height: 120px;
+        width: 300px;
+        height: 75px;
         padding-left: 20px;
         background-color: #fafafa;
         border: 0px solid black;
-        border-radius: 30px 30px 30px 30px;
+        border-radius: 15px 15px 15px 15px;
         box-shadow: 0px 5px 20px 4px #d5d5d5; 
         overflow: hidden;
         animation: appear 1s;
@@ -112,6 +123,11 @@
         }
         &:hover .delice-bloc__check {
             margin-right: 0;
+        }
+        @include mobile-first{
+            width: 600px;
+            height: 120px;
+            border-radius: 30px 30px 30px 30px;
         }
     }
     &__largeur{
@@ -125,11 +141,16 @@
         justify-content: center;
         align-items: center;
         background: white;
-        height: 32px;
-        width: 32px;
-        font-size: 20px;
+        height: 15px;
+        width: 15px;
+        font-size: 10px;
         border-radius: 16px;
         color: #99E2D0;
+        @include mobile-first{
+            height: 32px;
+            width: 32px;
+            font-size: 20px;
+        }
     }
     &__item{
         display: flex;
@@ -154,10 +175,15 @@
         text-overflow: ellipsis;
         overflow: hidden;
         position: relative;
-        top: 2px;
+        top: -5px;
+        right: 16px;
         font-family: "Roboto", sans-serif;
         font-weight: 600; 
-        font-size: 32px;
+        font-size: 14px;
+        @include mobile-first{
+            font-size: 32px;
+            top: 2px;
+        }
     }
     &__espaceSousTitre{
         white-space: nowrap;
@@ -165,89 +191,51 @@
         overflow: hidden;
         color: #686868;
         position: relative;
-        bottom: -19px;
-        right: 1px;
+        bottom: -11px;
+        right: 16px;
         font-family: "Roboto", sans-serif;
         font-weight: 300;
-        font-size: 25px;
+        font-size: 12px;
+        @include mobile-first{
+            font-size: 25px;
+            bottom: -19px;
+            right: 16px;
+        }
     }
     &__Price{
-        font-size: 25px;
         position: relative;
-        right: 36px;
-        bottom: 2px;
+        right: 65px;
+        bottom: 40px;
         padding-left: 3rem;
+        font-size: 12px;
+        @include mobile-first{
+            font-size: 25px;
+            bottom: 2px;
+        }
     }
     &__check{
         background-color: #99E2D0;
         margin-right: -112px;
-        margin-bottom: 6rem;
-        width: 111px;
-        height: 12rem;
+        margin-bottom: 10rem;
+        width: 53px;
+        height: 8rem;
         display: grid;
         place-items: center;
         flex-shrink: 0;
         transition: margin-right 0.5s;
+        @include mobile-first{
+            background-color: #99E2D0;
+            margin-right: -112px;
+            margin-bottom: 6rem;
+            width: 111px;
+            height: 12rem;
+            display: grid;
+            place-items: center;
+            flex-shrink: 0;
+            transition: margin-right 0.5s;
+
+        }
     }
-    /*&__btn{
-        width: 600px;
-        height: 120px;
-        padding-left: 20px;
-        background-color: #fafafa;
-        border: 0px solid black;
-        border-radius: 30px 30px 30px 30px;
-        box-shadow: 0px 5px 20px 4px #d5d5d5;
-    }
-    &__Choice{
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    }
-    &__Title{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        width: 490px;
-        height: 176px;
-    }
-    &__hauteurTitre{
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        position: relative;
-        top: 21px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 600;
-        font-size: 32px;
-    }
-    &__espaceSousTitre{
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        color: #686868;
-        position: relative;
-        bottom: -27px;
-        right: 1px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 300; 
-        font-size: 25px;
-    }
-    &__largeur{
-        width: 95%;
-    }
-    &__largeur2{
-        width: 100%;
-    }
-    &__Price {
-        font-size: 25px;
-        position: relative;
-        right: 12px;
-        bottom: 3px;
-        padding-left: 3rem;
-    }*/
 }
 
 

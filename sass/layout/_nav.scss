@@ -52,49 +52,6 @@
     }
 }
 
-/*.nav{
-    &__icon-Map{
-        position: relative;
-        left: 18rem;
-        top: 1px;
-        margin-right: 20px;
-        font-size: 18px;
-        @include tablet {
-            left: 7rem;
-        }
-        @include mobile{
-            position: relative;
-            left: 18rem;
-            top: 6rem;
-            margin-right: 20px;
-            font-size: 32px;
-        } 
-    }
-    &__texte{
-        width: 30rem;
-        height: 3rem;
-        border: none;
-        background: #F2F2F2;
-        box-shadow: inset 0px 7px 6px #d5d5d5;
-        text-align: center;
-        margin-left: 90px;
-        font-size: 20px;
-        border-radius: 5px;
-        font-weight: 500;  
-
-        @include tablet {
-            margin-left: -19px;
-        }
-
-        @include mobile{
-            width: 70rem;
-            height: 88px;
-            border: none;
-            background: #F2F2F2;
-            box-shadow: inset 0px 7px 6px #d5d5d5;
-            text-align: center;
-            font-size: 30px;
-            font-weight: 500;
-        } 
-    }
-}*/
+.input{
+    display: none;
+}
